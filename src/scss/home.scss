@@ -3,7 +3,7 @@
 	display: flex;
 	&__left-menu {
 		width: 232px;
-		height: 100vh;
+		height: auto;
 		background: #fff;
 		padding: 24px 16px 0;
 		display: flex;
@@ -11,11 +11,11 @@
 		align-items: center;
 		justify-content: space-between;
 		box-sizing: border-box;
-		@media (max-width:em(430)){
+		@media (max-width:$tablet){
 			width: 264px;
 			transition: 400ms;
 			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
-			height: 100vh;
+			// height: 100%;
 			padding: 16px;
 			z-index: 20;
 		// display: flex;
@@ -33,9 +33,11 @@
 
 	&__content {
 		width: calc(100% - 232px);
-		background-color: darkcyan;
-		@media (max-width: em(430)){
+		background: #fbfbfb;
+		padding: 0 toRem(49);
+		@media (max-width: $tablet){
 			  width: 100%;
+			  padding: 0 toRem(24);
 		}
 	}
 }
@@ -43,9 +45,5 @@
 }
 .content-desktop {
 }
-.dfg {
-	width: 100px;
-	height: 100px;
-	background-color: red;
-}
+
 //====================================================================================================
