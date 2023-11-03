@@ -595,10 +595,238 @@
 						</div>
 					</section>
 					<section class="content__resources resources">
-
+						<div class="resources__top">
+							<h3 class="resources__title title">Ресурсы в выдаче и оценка</h3>
+							<input data-datepicker autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="resources__input">
+							<div class="resources__decor"></div>
+						</div>
+						<div class="resources__content content-res">
+							<div class="content-res__item">
+								<h4 class="content-res__title">Яндекс</h4>
+								<div class="content-res__item-content">
+									<div class="content-res__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Домен</th>
+													<th>URL</th>
+													<th>Оценка</th>
+													<th>Динамика</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+													<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>2.5</td>
+													<td><span class="content-res__td-din">0.5</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+													<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.3</td>
+													<td><span class="content-res__td-din">0.3</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+													<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.1</td>
+													<td><span class="content-res__td-din content-res__td-din_gray">-</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="content-res__warnings warnings-resources">
+										<div data-da=".resources__content, 767.98" class="warnings-resources__item">
+											На бесплатном тарифе представлено всего 3 ресурса для каждой ПС
+										</div>
+										<div class="warnings-resources__item warnings-resources__item_blue">
+											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
+											<div class="warnings-resources__content">
+												<ul class="warnings-resources__list">
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг увеличился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг уменьшился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг не изменился:</span>
+													</li>
+												</ul>
+												<div class="warnings-resources__img">
+													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-res__item">
+								<h4 class="content-res__title">Google</h4>
+								<div class="content-res__item-content">
+									<div class="content-res__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Домен</th>
+													<th>URL</th>
+													<th>Оценка</th>
+													<th>Динамика</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+													<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>2.5</td>
+													<td><span class="content-res__td-din">0.5</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+													<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.3</td>
+													<td><span class="content-res__td-din">0.3</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+													<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.1</td>
+													<td><span class="content-res__td-din content-res__td-din_red">0.1</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="content-res__warnings warnings-resources">
+										<div class="warnings-resources__item warnings-resources__item_blue">
+											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
+											<div class="warnings-resources__content">
+												<ul class="warnings-resources__list">
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг увеличился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг уменьшился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг не изменился:</span>
+													</li>
+												</ul>
+												<div class="warnings-resources__img">
+													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__graph graph">
+						<img src="@img/graph/image 28.jpg" alt="">
+					</section>
+					<section class="content__gentable gentable">
+						<h4 class="gentable__title">Общая таблица ресурсов</h4>
+						<p class="gentable__ad">У вас есть неразмеченные ресурсы.
+							<a href="#" class="gentable__link">Перейти к разметке</a>
+						</p>
+						<div class="gentable__content">
+							<table>
+								<thead>
+									<tr>
+										<th><span>Домен</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>URL</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Шкала</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Оценка</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Заголовок</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Описание</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Тональность</span><img src="@img/info.svg" alt="info"></th>
+									</tr>
+									<tr>
+										<th colspan="7"><span>Карточки в отзовиках</span><img src="@img/info.svg" alt="info"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+										<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">5 -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="@img/platforms/irecommend.jpg" alt="spr">spr.ru</td>
+										<td><a href="spr.ru">spr.ru</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">- -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+										<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">- -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="gentable__ad">На бесплатном тарифе представлено всего 3 ресурса для каждой ПС</p>
+						</div>
 					</section>
 					<section class="content__recommendations recommendations">
-
+						<h4 class="recommendations__title">Рекомендации</h4>
+						<div class="recommendations__items">
+							<div class="recommendations__item item-rec">
+								<h5 class="item-rec__title">Основная категория площадок не установлена</h5>
+								<p class="item-rec__main-text">Это означает, что не достаточно задействованы основные площадки из категории отзовиков , которые дадут быстрый рост и изменят поисковую выдачу</p>
+								<ol class="item-rec__list">
+									<li class="item-rec__punkt">
+										<p>Используйте общие платформы: Проверьте популярные платформы отзывов, такие как otzovik, irecommend, zoon. Эти платформы позволяют пользователям оставлять отзывы о различных типах компаний и услуг, и они могут предоставить общую картину о репутации вашей компании.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Обратитесь к клиентам: Активно общайтесь с вашими клиентами и просите их оставлять отзывы о вашей компании на платформах, которые они предпочитают использовать. Это может быть в виде персональной просьбы или включения ссылок на платформы отзывов в ваши электронные письма или веб-сайт.</p>
+									</li>
+								</ol>
+								<div class="item-rec__brands brands-rec">
+									<a href="otzovik.com" class="brands-rec__link">otzovik.com</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/otzovik.svg" alt="Отзовик"></div>
+								</div>
+								<div class="item-rec__brands brands-rec">
+									<a href="zoon.ru" class="brands-rec__link">zoon</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/zoon.svg" alt="zoon"></div>
+								</div>
+								<div class="item-rec__brands brands-rec">
+									<a href="irecommend.ru" class="brands-rec__link">irecommend</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/irecommend.svg" alt="irecommend"></div>
+								</div>
+							</div>
+						</div>
+						<p class=" gentable__ad">На бесплатном тарифе представлено всего 1 рекомендация. Перейдите на <a href="#" class="gentable__link">платный тариф</a> и получите максимальное количество рекомендаций</p>
+					</section>
+					<section class="content__paid paid">
+						<div class="paid__left">
+							<h4 class="paid__grand-text">Вы теряете на негативной репутации ~23 000 руб. в день или ~698 321 руб. в месяц </h4>
+							<p class="paid__text">Ваша репутация в интернете влияет на продажи. Если вы не занимаетесь репутацией вы теряете деньги. По нашим наблюдениям чаще всего люди пишут негатив в интернете. С помощью сервиса Brandscore вы можете отследить площадки на которых пишут негатив и влиять на это. </p>
+							<span class="paid__grand-text">Разблокируйте полный функционал</span>
+							<a href="#" class="paid__link">Перейти на платный тариф </a>
+						</div>
+						<div class="paid__right">
+							<img src="@img/paid/Logotype.svg" alt="SIDORIN">
+							<p class="paid__text">Если вы хотите поручить управление репутацией профессионалам перейдите на сайт компании SidorinLab и оставьте заявку. Мы займемся вашей репутацией</p>
+							<a href="#" class="paid__link paid__link_right">Обратиться к профессионалам</a>
+						</div>
 					</section>
 				</div>
 			</main>

@@ -753,7 +753,6 @@
 							</div>
 						</div>
 					</section>
-
 					<section class="content__platforms platforms">
 						<h3 class="platforms__title">
 							<span>Распределение сайтов с отзывами по тональности</span>
@@ -860,10 +859,372 @@
 						</div>
 					</section>
 					<section class="content__resources resources">
-
+						<div class="resources__top">
+							<h3 class="resources__title title">Ресурсы в выдаче и оценка</h3>
+							<input data-datepicker autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="resources__input">
+							<div class="resources__decor"></div>
+						</div>
+						<div class="resources__content content-res">
+							<div class="content-res__item">
+								<h4 class="content-res__title">Яндекс</h4>
+								<div class="content-res__item-content">
+									<div class="content-res__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Домен</th>
+													<th>URL</th>
+													<th>Оценка</th>
+													<th>Динамика</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+													<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a></td>
+													<td>2.5</td>
+													<td><span class="content-res__td-din">0.5</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+													<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a></td>
+													<td>3.3</td>
+													<td><span class="content-res__td-din">0.3</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+													<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a></td>
+													<td>3.1</td>
+													<td><span class="content-res__td-din content-res__td-din_gray">-</span></td>
+												</tr>
+											</tbody>
+										</table>
+										<a href="#" data-key="other" class="item-platforms__link item-platforms__link_more more">Показать больше</a>
+										<a href="#" data-key="other" class="item-platforms__link item-platforms__link_less more">Показать меньше</a>
+									</div>
+									<div class="content-res__warnings warnings-resources">
+										<div class="warnings-resources__item warnings-resources__item_blue">
+											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
+											<div class="warnings-resources__content">
+												<ul class="warnings-resources__list">
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг увеличился:</span>
+														<span class="warnings-resources__quantity">2</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг уменьшился:</span>
+														<span class="warnings-resources__quantity">1</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг не изменился:</span>
+														<span class="warnings-resources__quantity">1</span>
+													</li>
+												</ul>
+												<div class="warnings-resources__img">
+													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-res__item">
+								<h4 class="content-res__title">Google</h4>
+								<div class="content-res__item-content">
+									<div class="content-res__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Домен</th>
+													<th>URL</th>
+													<th>Оценка</th>
+													<th>Динамика</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+													<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a></td>
+													<td>2.5</td>
+													<td><span class="content-res__td-din">0.5</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+													<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a></td>
+													<td>3.3</td>
+													<td><span class="content-res__td-din">0.3</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+													<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a></td>
+													<td>3.1</td>
+													<td><span class="content-res__td-din content-res__td-din_red">0.1</span></td>
+												</tr>
+											</tbody>
+										</table>
+										<a href="#" data-key="other" class="item-platforms__link item-platforms__link_more more">Показать больше</a>
+										<a href="#" data-key="other" class="item-platforms__link item-platforms__link_less more">Показать меньше</a>
+									</div>
+									<div class="content-res__warnings warnings-resources">
+										<div class="warnings-resources__item warnings-resources__item_blue">
+											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
+											<div class="warnings-resources__content">
+												<ul class="warnings-resources__list">
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг увеличился:</span>
+														<span class="warnings-resources__quantity">2</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг уменьшился:</span>
+														<span class="warnings-resources__quantity">1</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг не изменился:</span>
+														<span class="warnings-resources__quantity">1</span>
+													</li>
+												</ul>
+												<div class="warnings-resources__img">
+													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__graph graph">
+						<img src="@img/graph/image 28.jpg" alt="">
+					</section>
+					<section class="content__gentable gentable">
+						<h4 class="gentable__title">Общая таблица ресурсов</h4>
+						<p class="gentable__ad">У вас есть неразмеченные ресурсы.
+							<a href="#" class="gentable__link">Перейти к разметке</a>
+						</p>
+						<div class="gentable__content">
+							<table>
+								<thead>
+									<tr>
+										<th><span>Домен</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>URL</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Шкала</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Оценка</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Заголовок</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Описание</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Тональность</span><img src="@img/info.svg" alt="info"></th>
+									</tr>
+									<tr>
+										<th colspan="7"><span>Карточки в отзовиках</span><img src="@img/info.svg" alt="info"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+										<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">5 -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="@img/platforms/irecommend.jpg" alt="spr">spr.ru</td>
+										<td><a href="spr.ru">spr.ru</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">- -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+										<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">- -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="#" data-key="other" class="item-platforms__link item-platforms__link_more more">Показать больше</a>
+							<a href="#" data-key="other" class="item-platforms__link item-platforms__link_less more">Показать меньше</a>
+						</div>
 					</section>
 					<section class="content__recommendations recommendations">
+						<h4 class="recommendations__title">Рекомендации</h4>
+						<div class="recommendations__items">
+							<div class="recommendations__item item-rec not-main-category">
+								<h5 class="item-rec__title">Основная категория площадок не установлена</h5>
+								<p class="item-rec__main-text">Это означает, что не достаточно задействованы основные площадки из категории отзовиков , которые дадут быстрый рост и изменят поисковую выдачу</p>
+								<ol class="item-rec__list">
+									<li class="item-rec__punkt">
+										<p>Используйте общие платформы: Проверьте популярные платформы отзывов, такие как otzovik, irecommend, zoon. Эти платформы позволяют пользователям оставлять отзывы о различных типах компаний и услуг, и они могут предоставить общую картину о репутации вашей компании.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Обратитесь к клиентам: Активно общайтесь с вашими клиентами и просите их оставлять отзывы о вашей компании на платформах, которые они предпочитают использовать. Это может быть в виде персональной просьбы или включения ссылок на платформы отзывов в ваши электронные письма или веб-сайт.</p>
+									</li>
+								</ol>
+								<div class="item-rec__brands brands-rec">
+									<a href="otzovik.com" class="brands-rec__link">otzovik.com</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/otzovik.svg" alt="Отзовик"></div>
+								</div>
+								<div class="item-rec__brands brands-rec">
+									<a href="zoon.ru" class="brands-rec__link">zoon</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/zoon.svg" alt="zoon"></div>
+								</div>
+								<div class="item-rec__brands brands-rec">
+									<a href="irecommend.ru" class="brands-rec__link">irecommend</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/irecommend.svg" alt="irecommend"></div>
+								</div>
+							</div>
+							<div class="recommendations__item item-rec negativ">
+								<h5 class="item-rec__title">Большинство площадок имеет негативную тональность</h5>
+								<ol class="item-rec__list">
+									<li class="item-rec__punkt">
+										<p>Изучите обоснование негативных отзывов: Просмотрите негативные отзывы и попытайтесь понять, какие конкретные проблемы или жалобы пользователей привели к негативной оценке. Это поможет вам выявить общие тенденции и проблемные области, с которыми вы можете столкнуться.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Проявите внимание к отзывам: Ответьте на негативные отзывы, проявив внимание и заинтересованность в решении возникших проблем. Выразите сожаление о негативном опыте клиента и предложите конкретные шаги для улучшения ситуации. Это может показать ваше стремление к решению проблем и улучшению качества услуг.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Внесите коррективы в работу: Используйте негативные отзывы как источник информации для внесения изменений и улучшения ваших продуктов или услуг. Анализируйте общие проблемы и возможные улучшения, а затем предпримите действия для устранения недостатков.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Обратитесь к довольным клиентам: Попросите довольных клиентов оставить положительные отзывы о вашей компании. Активное привлечение положительной обратной связи может помочь сбалансировать общее впечатление о вашей компании и снизить влияние негативных отзывов.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Постройте лояльность и доверие: Сосредоточьтесь на установлении прочных отношений с клиентами. Предоставляйте высокое качество услуг, решайте проблемы быстро и эффективно, поддерживайте активную коммуникацию с клиентами. Это поможет вам создать положительную репутацию и лояльность клиентов, которые могут быть готовы защищать вашу компанию от негативных отзывов.<br><br>
+											Рекомендуем поработать с этим списком:</p>
+									</li>
+								</ol>
+								<div class="item-rec__table">
+									<table>
+										<tbody>
+											<tr>
+												<th>Домен</th>
+												<th>URL</th>
+												<th>Тональность</th>
+											</tr>
+											<tr><th colspan="3">Карточки в отзовиках</th></tr>
+											<tr>
+												<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+												<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>негатив</td>
+											</tr>
+											<tr>
+												<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+												<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>негатив</td>
+											</tr>
+											<tr>
+												<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+												<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>негатив</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="recommendations__item item-rec pozitiv">
+								<h5 class="item-rec__title">Большинство площадок с позитивной оценкой</h5>
+								<p class="item-rec__main-text">Если у бренда большинство площадок имеют позитивные оценки в поисковой выдаче, это может быть положительным сигналом для вашей онлайн репутации. В такой ситуации рекомендуется:</p>
+								<ol class="item-rec__list">
+									<li class="item-rec__punkt">
+										<p>Активное взаимодействие: Отвечайте на положительные отзывы, выражайте признательность клиентам за поддержку и позитивные слова. Подчеркивайте, что их мнение ценно для вас.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Поддержка и укрепление репутации: Продолжайте предоставлять качественные продукты/услуги и высокий уровень обслуживания, чтобы поддерживать позитивные отзывы и укреплять вашу репутацию.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Вовлечение пользователей: Попросите клиентов делиться своими позитивными впечатлениями о вашем бренде в социальных медиа, предлагайте им использовать хэштеги, связанные с вашей компанией.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Публикация отзывов: Размещайте положительные отзывы и рекомендации на вашем сайте, в социальных сетях и других платформах. Это может помочь привлечь новых клиентов и укрепить доверие к вашему бренду.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Мониторинг и обратная связь: Продолжайте следить за отзывами и комментариями о вашей компании в онлайн пространстве. Будьте готовы реагировать на негативные отзывы или вопросы пользователей.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Используйте отзывы в маркетинге: Используйте позитивные отзывы в рекламных материалах, на веб-сайте и в других маркетинговых каналах для укрепления доверия у потенциальных клиентов.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Отмечайте и поощряйте лояльность: Если у вас есть программы лояльности или повторных покупок, акцентируйте их, чтобы поддерживать связь с лояльными клиентами и стимулировать их оставлять положительные отзывы.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Не забывайте об отзывах с других платформ: Если у вас есть хорошие отзывы на других платформах, например, на сайтах отзовиков или социальных медиа, не забывайте о них и публикуйте на своем сайте или в социальных сетях.</p>
+									</li>
+								</ol>
+								<p class="itepm-rec__text">С помощью этих рекомендаций вы можете стимулировать клиентов оставлять более активные отзывы и участвовать в обратной связи, что поможет сформировать более разнообразную картину вашей репутации и предоставит вам ценные идеи для улучшения вашего бизнеса.</p>
+							</div>
+							<div class="recommendations__item item-rec neitral">
+								<h5 class="item-rec__title">Большинство площадок с нейтральной оценкой</h5>
+								<p class="item-rec__main-text">Если большинство отзывов о вашей компании в интернете являются нейтральными, это может быть признаком того, что клиенты не имеют ярко выраженных положительных или отрицательных впечатлений о вас. В такой ситуации рекомендую следующее:</p>
+								<ol class="item-rec__list">
+									<li class="item-rec__punkt">
+										<p>Вовлечение клиентов: Призывайте своих клиентов оставлять отзывы после приобретения продукта или получения услуги. Распространяйте ссылки на различные платформы отзывов и активно коммуницируйте с клиентами, чтобы они могли поделиться своим опытом.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Поддержка позитивных отзывов: Отвечайте на нейтральные отзывы, выражая благодарность клиентам за обратную связь и подчеркивая ваше стремление к улучшению и удовлетворению их потребностей. Это поможет укрепить положительное впечатление и связь с вашей компанией.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Расширение обратной связи: Проведите опросы или анкетирование среди клиентов, чтобы получить более детальную информацию о их впечатлениях и предпочтениях. Это поможет вам понять, какие аспекты вашего продукта или услуги могут быть улучшены или выделены для усиления положительных отзывов.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Создание привлекательных контента и предложений: Разработайте контент, который будет интересен вашей целевой аудитории и поддерживайте активность на социальных медиа. Специальные предложения, конкурсы или скидки могут стимулировать клиентов оставлять более активные и положительные отзывы.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Работа над улучшением клиентского опыта: Анализируйте нейтральные отзывы и выявляйте общие тренды или повторяющиеся темы. На основе этой информации, сосредоточьтесь на улучшении слабых сторон и разработке новых функций, чтобы создать более положительный и запоминающийся клиентский опыт.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Возможности обратной связи: Облегчите процесс обратной связи для клиентов, предоставляя различные каналы связи, такие как онлайн-чаты, электронная почта или телефон. Это поможет клиентам легко выразить свои мнения и позволит вам быстро реагировать на их запросы и комментарии.</p>
+									</li>
+								</ol>
+								<p class="itepm-rec__text">С помощью этих рекомендаций вы можете стимулировать клиентов оставлять более активные отзывы и участвовать в обратной связи, что поможет сформировать более разнообразную картину вашей репутации и предоставит вам ценные идеи для улучшения вашего бизнеса.</p>
+							</div>
+							<div class="recommendations__item item-rec not-vbIdacha">
+								<h5 class="item-rec__title">Упоминаний нет в выдаче</h5>
+								<p class="item-rec__main-text">Ваша компания не имеет упоминаний в поисковой выдаче, это может указывать на то, что ваша онлайн репутация неактивна или слабо развита. Вот несколько рекомендаций, чтобы улучшить вашу онлайн репутацию:</p>
+								<ol class="item-rec__list">
+									<li class="item-rec__punkt">
+										<p>
 
+										</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>
+
+										</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>
+
+										</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>
+
+										</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>
+
+										</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>
+
+										</p>
+									</li>
+								</ol>
+							</div>
+						</div>
 					</section>
 				</div>
 			</main>
