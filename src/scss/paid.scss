@@ -1,0 +1,86 @@
+.content {
+
+	&__paid {
+		margin-top: 58px;
+		border-radius: 5px;
+		background: linear-gradient(180deg, #FF3E3E 0%, #B62424 100%);
+		box-shadow: 0px 0px 15px 7px #F3F6F8;
+		color: white;
+		padding: 25px;
+		padding-bottom: 50px;
+		display: flex;
+		@media (max-width:$mobile){
+			// margin-left: -20px;
+		// margin-right: -20px;
+			flex-direction: column;
+			row-gap: 40px;
+			padding: 25px toRem(17);
+			
+			 margin-top: 90px; 
+		}
+	}
+}
+.paid {
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: toRem(10);
+		margin-bottom: 16px;
+		img {
+			border-radius: 40px;
+		}
+	}
+
+	&__logo-text {
+		font-weight: 700;
+		line-height: 18px;
+	}
+
+	&__left {
+		flex: 0 0 65.459308%; /* 657/1069 */
+		@media (min-width:$mobile){
+			 padding-right: 25px; 
+		}
+		@media (max-width:$mobile){
+			 width: 100%;
+			 flex: 0 0 100%; 
+		}
+		span {
+			display: block;
+		}
+	}
+
+	&__grand-text {
+		font-size: toRem(18);
+		line-height: math.div(28 , 18);
+		font-weight: 700;
+		&:not(:last-child) {margin-bottom: toRem(20);}
+	}
+
+	&__text {
+		font-weight: 500;
+		line-height: 20px; /* 125% */
+		margin-bottom: 32px;
+	}
+
+	&__link {
+		font-weight: 500;
+		line-height: math.div(20 , 16);
+		color: #000;
+		border-radius: 6px;
+		background: #FFF;
+		padding: 10px toRem(30);
+		margin-top: 5px;
+		display: inline-block;
+		text-align: center;
+		&_right {
+			color: #FFF;
+			background: initial;
+			border: 1px solid #FFF;
+		}
+	}
+
+	&__right {
+	}
+}

@@ -9,14 +9,27 @@ textarea {
 	appearance: none;
 }
 .input {
-	border-radius: 0 !important;
-	width: 100%;
-	display: block;
+	// border-radius: 0 !important;
+	border: 1px solid #DFE2E4;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+	 height: 40px;
 	padding: 0px 20px;
 	border: 1px solid #eee;
+	@media (max-width:$mobile){
+		border-radius: 15px;
+		border: 1px solid #AEAEAE;
+		background: #FFF url('@img/top/calendar.svg') no-repeat right 17px center;
+		height: 30px;
+	}
 	&._form-focus {
 	}
 	&._form-error {
+	}
+	&::placeholder {
+		font-weight: 700;
 	}
 }
 .input[placeholder]:not([data-placeholder-nohiden]) {

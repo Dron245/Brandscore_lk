@@ -3,7 +3,7 @@
 	display: flex;
 	&__left-menu {
 		width: 232px;
-		height: auto;
+		height: 100%;
 		background: #fff;
 		padding: 24px 16px 0;
 		display: flex;
@@ -35,15 +35,23 @@
 		width: calc(100% - 232px);
 		background: #fbfbfb;
 		padding: 0 toRem(49);
+		max-width: 1180px;
+		margin:auto;
 		@media (max-width: $tablet){
 			  width: 100%;
 			  padding: 0 toRem(24);
 		}
+		@media (max-width:$mobile){
+			 padding: 0; 
+			//  margin-left: -20px;
+			//  margin-right: -20px;
+		}
 	}
 }
 .left-menu-wrapper {
+	.menu-open &  {
+		margin-left: 0;
+	}
 }
 .content-desktop {
 }
-
-//====================================================================================================

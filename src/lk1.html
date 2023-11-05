@@ -1,136 +1,868 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Верстка «NEW_PROJECT_NAME»</title>
-	</head>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Личный кабинет 1"
+	})
 	<body>
-		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
-			<div class="rootpage__info">
-				Особенности проекта
-			</div>
-			<h2>Готовые страницы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="lk1.html">Личный кабинет 1</a></li>
-				<li><a target="_blank" href="lk2.html">Личный кабинет 2</a></li>
-			</ol>
+		<div class="wrapper">
+			<main class="page">
+				<div class="page__left-menu left-menu-wrapper">
+				</div>
+				<div class="page__content content-desktop content">
+					<!-- <section class="content__main">
+						<div class="main__top top">
+							<a href="#" class="top__logo">
+								<svg version="1.1" id="Layer_1" x="0px" y="0px" width="40" viewBox="0 0 40 40.000027" enable-background="new 0 0 604 604" xml:space="preserve" sodipodi:docname="logo.svg" height="40.000027" inkscape:version="1.2.2 (b0a8486541, 2022-12-01)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs8796"></defs><sodipodi:namedview id="namedview8794" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false" inkscape:zoom="0.9951006" inkscape:cx="305.99921" inkscape:cy="378.35371" inkscape:window-width="1920" inkscape:window-height="1016" inkscape:window-x="0" inkscape:window-y="27" inkscape:window-maximized="1" inkscape:current-layer="Layer_1"></sodipodi:namedview>
+									<path fill="#e00815" opacity="1" stroke="none" d="m 18.410596,0 c 1.016836,0 2.033673,0 3.09348,0.024754 0.73086,0.1171345 1.423884,0.1815098 2.10579,0.3065219 3.898333,0.7146705 7.299129,2.4362909 10.160546,5.171234 3.383668,3.2341122 5.406955,7.1847471 6.050108,11.8311771 0.05288,0.382007 0.119334,0.762133 0.17948,1.143134 0,1.016836 0,2.033673 -0.02486,3.092663 -0.07063,0.413627 -0.111108,0.785834 -0.162972,1.156451 -0.593807,4.243095 -2.360169,7.932621 -5.306174,11.03516 -3.096093,3.260599 -6.888458,5.243102 -11.345966,5.988725 -0.09654,0.01467 -0.170307,0.03398 -0.266716,0.05139 -0.05238,0.0034 -0.08211,0.0087 -0.136945,0.0088 -0.139884,0.01732 -0.254662,0.03977 -0.391777,0.05969 -0.05184,0.0018 -0.08135,0.0062 -0.139474,0.0063 -0.297204,0.03844 -0.565793,0.08123 -0.834385,0.124026 -0.972686,0 -1.945372,0 -2.960587,-0.02463 C 15.601695,39.694868 12.941396,38.977762 10.50253,37.599147 4.665303,34.299554 1.1984542,29.335044 0.1826517,22.686108 0.1299823,22.341361 0.0612528,21.999065 1e-7,21.655629 0,20.484267 0,19.312906 0.027975,18.10506 0.1217391,17.660188 0.1876925,17.25183 0.2532916,16.843412 0.9085533,12.763771 2.6572476,9.21387 5.5042797,6.2298785 8.7358285,2.8428705 12.688293,0.8226012 17.334742,0.1794387 17.694743,0.1296073 18.052041,0.0602707 18.410596,0 m 6.671419,11.970612 c -1.015346,-0.841284 -2.205895,-1.173015 -3.49922,-1.177751 -2.240004,-0.0082 -4.480061,-0.0027 -6.720095,-0.0017 -0.09445,4.2e-5 -0.188899,0.01268 -0.272713,0.01869 0,5.771698 0,11.513717 0,17.258987 0.069,0.0046 0.112441,0.01014 0.155886,0.01014 2.471759,-4.1e-5 4.943618,0.01091 7.415196,-0.01034 0.513037,-0.0044 1.038135,-0.07759 1.535357,-0.205703 2.773555,-0.7146 4.250699,-3.256372 3.462436,-5.948302 -0.389627,-1.330586 -1.254859,-2.271522 -2.532763,-2.891702 1.23996,-0.816468 1.952056,-1.922834 2.031094,-3.399088 0.07812,-1.459094 -0.388943,-2.6863 -1.575178,-3.653178 z" id="path8771" style="stroke-width:0.0662253"></path>
+									<path fill="#fffefe" opacity="1" stroke="none" d="M 40,18.445784 C 39.939854,18.09582 39.873403,17.715694 39.82052,17.333687 39.177367,12.687257 37.15408,8.7366224 33.770412,5.5025102 30.908995,2.7675671 27.508199,1.0459467 23.609866,0.3312762 22.92796,0.2062641 22.234936,0.1418888 21.535113,0.0247543 27.677287,0 33.831397,0 40,0 c 0,6.1382414 0,12.276494 0,18.445784 z" id="path8773" style="stroke-width:0.0662253"></path>
+									<path fill="#fffefe" opacity="1" stroke="none" d="m 1e-7,21.686666 c 0.061253,0.312399 0.1299822,0.654695 0.1826516,0.999442 1.0158025,6.648936 4.4826513,11.613446 10.3198783,14.913039 2.438866,1.378615 5.099165,2.095721 7.896574,2.376228 C 12.27857,39.999999 6.1465439,39.999999 0,39.999999 0,33.90591 0,27.811806 1e-7,21.686666 Z" id="path8775" style="stroke-width:0.0662253"></path>
+									<path fill="#fffefe" opacity="1" stroke="none" d="M 18.379559,0 C 18.052041,0.0602707 17.694743,0.1296073 17.334742,0.1794387 12.688293,0.8226012 8.7358285,2.8428705 5.5042797,6.2298785 2.6572476,9.21387 0.9085533,12.763771 0.2532916,16.843412 0.1876925,17.25183 0.1217391,17.660188 0.027975,18.074022 0,12.057767 0,6.0360636 0,0 6.1161668,0 12.232345,0 18.379559,0 Z" id="path8777" style="stroke-width:0.0662253"></path>
+									<path fill="#fffefe" opacity="1" stroke="none" d="m 22.253727,39.880322 c 0.02951,-0.0044 0.05902,-0.0088 0.128184,0.0021 0.159627,-0.01225 0.279592,-0.03978 0.399558,-0.0673 0.02973,-0.0053 0.05946,-0.01054 0.127739,-6.69e-4 0.116895,-0.0099 0.195246,-0.03496 0.273596,-0.06001 4.434729,-0.750255 8.227094,-2.732758 11.323187,-5.993357 2.946005,-3.102539 4.712367,-6.792065 5.306174,-11.03516 0.05186,-0.370617 0.09234,-0.742824 0.162972,-1.125412 C 40,27.721349 40,33.853294 40,39.999999 c -5.895414,0 -11.790842,0 -17.717487,-0.01996 -0.03041,-0.04655 -0.0296,-0.07313 -0.02879,-0.09972 z" id="path8779" style="stroke-width:0.0662253"></path>
+									<path fill="#fdd3d3" opacity="1" stroke="none" d="m 22.225113,39.875973 c 0.0278,0.03093 0.02699,0.05752 0.02636,0.104067 C 21.98513,40 21.718602,40 21.421404,40 c 0.237916,-0.04279 0.506505,-0.08558 0.803709,-0.124027 z" id="path8781" style="stroke-width:0.0662253"></path>
+									<path fill="#fefdfd" opacity="1" stroke="none" d="m 25.100718,11.984925 c 1.167532,0.952564 1.634596,2.17977 1.556475,3.638865 -0.07904,1.476253 -0.791134,2.582619 -2.031094,3.399087 1.277904,0.62018 2.143136,1.561116 2.532763,2.891703 0.788263,2.691929 -0.688881,5.233702 -3.462436,5.948302 -0.497222,0.128109 -1.02232,0.201292 -1.535357,0.205702 -2.471578,0.02125 -4.943437,0.0103 -7.415196,0.01034 -0.04345,0 -0.08689,-0.0055 -0.155886,-0.01014 0,-5.745269 0,-11.487288 0,-17.258987 0.08381,-0.006 0.17826,-0.01865 0.272713,-0.01869 2.240034,-9.86e-4 4.480091,-0.0064 6.720095,0.0017 1.293325,0.0047 2.483874,0.336467 3.517923,1.192063 m -1.645995,9.027557 c -0.548207,-0.442787 -1.187136,-0.61217 -1.878195,-0.613926 -1.246562,-0.0032 -2.493141,-0.0017 -3.739711,-7.35e-4 -0.09493,6.6e-5 -0.189856,0.01135 -0.274697,0.01677 0,1.746165 0,3.461336 0,5.160445 1.489046,0 2.955856,0.05431 4.416373,-0.01819 1.056333,-0.05244 1.876364,-0.610185 2.200251,-1.665364 C 24.504504,22.8302 24.35499,21.83926 23.454723,21.01248 M 17.53823,16.721816 c 0,0.403196 0,0.806391 0,1.214601 1.345787,0 2.645288,0.02491 3.943117,-0.01086 0.617682,-0.01703 1.191583,-0.251008 1.604827,-0.74513 0.613658,-0.733758 0.707104,-1.587709 0.411613,-2.458221 -0.295262,-0.86984 -1.007211,-1.328942 -1.881024,-1.396618 -1.13989,-0.08828 -2.289081,-0.05687 -3.434291,-0.07566 -0.205975,-0.0034 -0.412054,-4.64e-4 -0.644222,-4.64e-4 0,1.161682 0,2.28392 -2e-5,3.472376 z" id="path8783" style="stroke-width:0.0662253"></path>
+									<path fill="#fdd3d3" opacity="1" stroke="none" d="m 22.756364,39.810002 c -0.09486,0.03265 -0.214826,0.06017 -0.352116,0.07496 0.09745,-0.03519 0.212232,-0.05764 0.352116,-0.07496 z" id="path8785" style="stroke-width:0.0662253"></path>
+									<path fill="#fdd3d3" opacity="1" stroke="none" d="m 23.160025,39.74982 c -0.05557,0.02968 -0.133922,0.05473 -0.228171,0.06653 0.05786,-0.03256 0.131628,-0.05186 0.228171,-0.06653 z" id="path8787" style="stroke-width:0.0662253"></path>
+									<path fill="#de0a17" opacity="1" stroke="none" d="m 23.472365,21.02826 c 0.882625,0.811002 1.032139,1.801942 0.706379,2.863218 -0.323887,1.055179 -1.143918,1.612922 -2.200251,1.665364 -1.460517,0.0725 -2.927327,0.01819 -4.416373,0.01819 0,-1.699109 0,-3.41428 0,-5.160445 0.08484,-0.0054 0.179765,-0.0167 0.274697,-0.01677 1.24657,-9.54e-4 2.493149,-0.0024 3.739711,7.35e-4 0.691059,0.0018 1.329988,0.171139 1.895837,0.629704 z" id="path8789" style="stroke-width:0.0662253"></path>
+									<path fill="#de0a17" opacity="1" stroke="none" d="m 17.53824,16.688706 c 1e-5,-1.155347 1e-5,-2.277584 1e-5,-3.439266 0.232168,0 0.438247,-0.0029 0.644222,4.63e-4 1.14521,0.01879 2.294401,-0.01262 3.434291,0.07566 0.873813,0.06768 1.585762,0.526777 1.881024,1.396618 0.295491,0.870511 0.202045,1.724462 -0.411613,2.458221 -0.413244,0.494122 -0.987145,0.7281 -1.604827,0.745129 -1.297829,0.03578 -2.59733,0.01086 -3.943117,0.01086 0,-0.40821 0,-0.811405 10e-6,-1.24771 z" id="path8791" style="stroke-width:0.0662253"></path>
+									</svg>
+							</a>
+							<h1 data-da=".main__bottom, 768, 0" class="top__title">Отчет</h1>
+							<div class="top__info">
+								<span class="top__text">Ваш тариф: демо</span>
+								<a href="#" class="top__button button">Оплатить</a>
+							</div>
+							<div class="top__user">
+								<a href="#" class="top__img"><img src="@img/top/user.png" alt="user"></a>
+								<a href="#" class="top__name">lorem</a>
+								<div class="top__drop-menu">
+									<span class="top__drop-menu-punkt">Выход</span>
+								</div>
+							</div>
+							<button type="button" class="top__icon icon-menu"><span></span></button>
+						</div>
+						<div class="main__bottom bottom-main">
+							<input class="input bottom-main__input" data-datepicker placeholder="2023-07-08" type="text" name="">
+							<input class="input bottom-main__input bottom-main__input_summary" placeholder="Сводка" type="text" name="">
+							<div class="main-bottom__actions">
+								<button class="main-bottom__button button">Разметка ресурсов</button>
+								<button class="main-bottom__button button">Провести проверку</button>
+								<button class="main-bottom__button main-bottom__button_menu button">
+									<span>Экспорт</span>
+									<ul class="main-bottom__sublist">
+										<li class="main-bottom__subitem">PDF</li>
+										<li class="main-bottom__subitem">
+											<span>WORD</span>
+											<img src="@img/top/lock-s.svg" alt="заблокировано">
+										</li>
+									</ul>
+								</button>
+							</div>
+						</div>
+					</section>
+					<section class="content__summary summary">
+						<div class="summary__top">
+							<h3 class="summury__title title">Общая сводка</h3>
+							<img src="@img/info.svg" alt="info">
+						</div>
+						<div class="summary__main main-summary">
+							<div class="main-summary__item main-summary__item_summ">
+								<span class="main-summary__title">Суммарно ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">12</div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Позитивных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Негативных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item main-summary__item_neitral">
+								<span class="main-summary__title">Нейтральных ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">5</div>
+							</div>
+						</div>
+						<div class="summary__raiting">
+							<div class="summary__left">
+								<div class="summary__img">
+									<img src="@img/summary/stars.svg" alt="Рейтинг">
+								</div>
+								<div class="summary__wrapper">
+									<span class="summary__scores">1 из 5</span>
+								<div class="summary__signature">ORM оценка</div>
+								</div>
+								<div class="summary__img">
+									<img src="@img/info-invert.svg" alt="info">
+								</div>
+							</div>
+							<div class="summary__right">
+								<p>Крайне низкая оценка, сигнализирующая о серьезных проблемах и недовольстве пользователей.</p>
+							</div>
+							<div class="summary__bottom">
+								<p>Ваша онлайн репутация находится на очень низком уровне, что может указывать на проблемы с вашим поведением или коммуникацией в сети. Вероятно, вам необходимо принять срочные меры для исправления ситуации и улучшения впечатления, которое вы оставляете на целевую аудиторию</p>
+							</div>
+						</div>
+					</section>
+					<section class="content__summary summary">
+						<div class="summary__top">
+							<h3 class="summury__title title">Общая сводка</h3>
+							<img src="@img/info.svg" alt="info">
+						</div>
+						<div class="summary__main main-summary">
+							<div class="main-summary__item main-summary__item_summ">
+								<span class="main-summary__title">Суммарно ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">12</div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Позитивных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Негативных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item main-summary__item_neitral">
+								<span class="main-summary__title">Нейтральных ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">5</div>
+							</div>
+						</div>
+						<div class="summary__raiting">
+							<div class="summary__left">
+								<div class="summary__img">
+									<img src="@img/summary/stars.svg" alt="Рейтинг">
+								</div>
+								<div class="summary__wrapper">
+									<span class="summary__scores">2 из 5</span>
+								<div class="summary__signature">ORM оценка</div>
+								</div>
+								<div class="summary__img">
+									<img src="@img/info-invert.svg" alt="info">
+								</div>
+							</div>
+							<div class="summary__right">
+								<p>Низкая оценка, указывающая на существенные проблемы и недостатки, требующие улучшения.</p>
+							</div>
+							<div class="summary__bottom">
+								<p>Ваша онлайн репутация находится на очень низком уровне, что может указывать на проблемы с вашим поведением или коммуникацией в сети. Вероятно, вам необходимо принять срочные меры для исправления ситуации и улучшения впечатления, которое вы оставляете на целевую аудиторию</p>
+							</div>
+						</div>
+					</section>
+					<section class="content__summary summary">
+						<div class="summary__top">
+							<h3 class="summury__title title">Общая сводка</h3>
+							<img src="@img/info.svg" alt="info">
+						</div>
+						<div class="summary__main main-summary">
+							<div class="main-summary__item main-summary__item_summ">
+								<span class="main-summary__title">Суммарно ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">12</div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Позитивных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Негативных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item main-summary__item_neitral">
+								<span class="main-summary__title">Нейтральных ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">5</div>
+							</div>
+						</div>
+						<div class="summary__raiting">
+							<div class="summary__left">
+								<div class="summary__img">
+									<img src="@img/summary/stars.svg" alt="Рейтинг">
+								</div>
+								<div class="summary__wrapper">
+									<span class="summary__scores">3 из 5</span>
+								<div class="summary__signature">ORM оценка</div>
+								</div>
+								<div class="summary__img">
+									<img src="@img/info-invert.svg" alt="info">
+								</div>
+							</div>
+							<div class="summary__right">
+								<p>Средняя оценка, отражающая смешанную репутацию с присутствием как положительных, так и отрицательных аспектов.</p>
+							</div>
+							<div class="summary__bottom">
+								<p>Ваша онлайн репутация находится на очень низком уровне, что может указывать на проблемы с вашим поведением или коммуникацией в сети. Вероятно, вам необходимо принять срочные меры для исправления ситуации и улучшения впечатления, которое вы оставляете на целевую аудиторию</p>
+							</div>
+						</div>
+					</section>
+					<section class="content__summary summary">
+						<div class="summary__top">
+							<h3 class="summury__title title">Общая сводка</h3>
+							<img src="@img/info.svg" alt="info">
+						</div>
+						<div class="summary__main main-summary">
+							<div class="main-summary__item main-summary__item_summ">
+								<span class="main-summary__title">Суммарно ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">12</div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Позитивных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Негативных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item main-summary__item_neitral">
+								<span class="main-summary__title">Нейтральных ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">5</div>
+							</div>
+						</div>
+						<div class="summary__raiting">
+							<div class="summary__left">
+								<div class="summary__img">
+									<img src="@img/summary/stars.svg" alt="Рейтинг">
+								</div>
+								<div class="summary__wrapper">
+									<span class="summary__scores">4 из 5</span>
+								<div class="summary__signature">ORM оценка</div>
+								</div>
+								<div class="summary__img">
+									<img src="@img/info-invert.svg" alt="info">
+								</div>
+							</div>
+							<div class="summary__right">
+								<p>Высокая оценка, свидетельствующая о хорошей репутации и довольстве большинства пользователей.</p>
+							</div>
+							<div class="summary__bottom">
+								<p>Ваша онлайн репутация находится на очень низком уровне, что может указывать на проблемы с вашим поведением или коммуникацией в сети. Вероятно, вам необходимо принять срочные меры для исправления ситуации и улучшения впечатления, которое вы оставляете на целевую аудиторию</p>
+							</div>
+						</div>
+					</section> 
+					<section class="content__summary summary">
+						<div class="summary__top">
+							<h3 class="summury__title title">Общая сводка</h3>
+							<img src="@img/info.svg" alt="info">
+						</div>
+						<div class="summary__main main-summary">
+							<div class="main-summary__item main-summary__item_summ">
+								<span class="main-summary__title">Суммарно ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">12</div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Позитивных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item">
+								<span class="main-summary__title">Негативных ресурсов</span>
+								<div class="main-summary__number"><img src="@img/summary/lock-summary.svg" alt=""></div>
+							</div>
+							<div class="main-summary__item main-summary__item_neitral">
+								<span class="main-summary__title">Нейтральных ресурсов</span>
+								<div class="main-summary__number main-summary__number_numb">5</div>
+							</div>
+						</div>
+						<div class="summary__raiting">
+							<div class="summary__left">
+								<div class="summary__img">
+									<img src="@img/summary/stars.svg" alt="Рейтинг">
+								</div>
+								<div class="summary__wrapper">
+									<span class="summary__scores">5 из 5</span>
+								<div class="summary__signature">ORM оценка</div>
+								</div>
+								<div class="summary__img">
+									<img src="@img/info-invert.svg" alt="info">
+								</div>
+							</div>
+							<div class="summary__right">
+								<p>Отличная оценка, указывающая на превосходную репутацию и высокую удовлетворенность клиентов.</p>
+							</div>
+							<div class="summary__bottom">
+								<p>Ваша онлайн репутация находится на очень низком уровне, что может указывать на проблемы с вашим поведением или коммуникацией в сети. Вероятно, вам необходимо принять срочные меры для исправления ситуации и улучшения впечатления, которое вы оставляете на целевую аудиторию</p>
+							</div>
+						</div>
+					</section>
+					<section class="content__evaluation evaluation">
+						<h3 class="evaluation__title">
+							<span>Оценка вашего сайта:</span>
+							<a href="#" class="evaluation__title-link">site.ru</a>
+							<img src="@img/info.svg" alt="info">
+						</h3>
+						<div class="evaluation__search search-evaluation">
+							<div class="search-evaluation__item">
+								<div class="search-evaluation__rang">
+									<img src="@img/evaluation/lock-ev-white.svg" alt="Заблокировано">
+								</div>
+								<div class="search-evaluation__content">
+									<span class="search-evaluation__title">Yandex</span>
+									<p class="search-evaluation__text">Позиция вашего сайта в Яндексе будет доступна после перехода на платный тариф.</p>
+								</div>
+							</div>
+							<div class="search-evaluation__item">
+								<div class="search-evaluation__rang">4</div>
+								<div class="search-evaluation__content">
+									<span class="search-evaluation__title">Google</span>
+									<p class="search-evaluation__text">Мы обнаружили ваш сайт в Яндексе и он занимает 4 место в поисковой выдаче по ORM запросу связанному с репутацией</p>
+								</div>
+							</div>
+						</div>
+						<div class="evaluation__table table-evaluation">
+							<table>
+								<thead>
+									<tr>
+										<th></th>
+										<th>Домен</th>
+										<th>ПС</th>
+										<th>Позиция</th>
+										<th>URL</th>
+										<th>Заголовок</th>
+										<th>Описание</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="@img/evaluation/brand.jpg" alt="hoff"></td>
+										<td>hoff.ru</td>
+										<td>Yandex</td>
+										<td><img src="@img/evaluation/lock-ev.svg" alt=""></td>
+										<td><a href="https://hoff.ru/otzivi">https://hoff.ru/otzivi</a></td>
+										<td style="text-align: left;">Hoff.ru - интернет-магазин мебели и товаров для дома</td>
+										<td style="text-align: left;">Hoff.ru - интернет-магазин мебели и товаров для дома - отзывы ; Удобный интернет магазин, легко можно выбрать товар, проведя сортировку, можно почитать отзывы и ...</td>
+									</tr>
+									<tr>
+										<td><img src="@img/evaluation/brand.jpg" alt="hoff"></td>
+										<td>hoff.ru</td>
+										<td>Google</td>
+										<td>5</td>
+										<td><a href="https://hoff.ru/otzivi">https://hoff.ru/otzivi</a></td>
+										<td style="text-align: left;" width="15%">Вся правда о Hoff: стоит ли у них покупать. Все плюсы и минусы...</td>
+										<td style="text-align: left;" width="21%">Все мы знаем магазин мебели и товаров для дома Hoff. Но хороший ли это магазин?Как выбирать? Не только по внешности, а ещё и по отзывам. Нет, на сайте самого Хофф их нет.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="evaluation__declaration">
+							<p>В бесплатной версии анализ сайта не доступен. Перейдите на <a href="#">платный тариф</a> чтобы получить полный отчет.</p>
+						</div>
+						<div class="evaluation__bottom bottom-evaluation">
+							<h4 class="bottom-evaluation__title">
+								<span>Примерная упущенная выручка от негативных <br> ресурсов</span>
+								<img src="@img/info.svg" alt="info">
+							</h4>
+							<div class="bottom-evaluation__content content-evaluation-bottom">
+								<div class="content-evaluation-bottom__left">
+									<div class="content-evaluation-bottom__group">
+										<div class="content-evaluation-bottom__rub">
+											<img src="@img/evaluation/₽.svg" alt="Рубль">
+										</div>
+										<span class="content-evaluation-bottom__number">~698 321 ₽</span>
+										<button type="button" class="content-evaluation-bottom__action">изменить</button>
+									</div>
+									<div class="content-evaluation-bottom__group">
+										<p>Ваша репутация это не только отношение клиентов к бренду или продукции и услугам, а прямая потеря в выручке. </p>
+									</div>
+								</div>
+								<div class="content-evaluation-bottom__right">
+									<div class="content-evaluation-bottom__group content-evaluation-bottom__group_border">
+										<img src="@img/evaluation/i.png" alt="i">
+										<span>irecommend.ru</span>
+										<a href="https://irecommend.ru">https://irecommend.ru/conte...</a>
+										<img src="@img/evaluation/lock-ev-1421.svg" alt="Заблокировано">
+									</div>
+									<div class="content-evaluation-bottom__group content-evaluation-bottom__group_bg-blue">
+										<p>По нашим расчетм на этом сайте вы теряете ~29000 руб в месяц. Это наиболее проблемный ресурс. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="evaluation__bottom bottom-evaluation">
+							<h4 class="bottom-evaluation__title">
+								<span>Примерная упущенная выручка от негативных<br> ресурсов</span>
+								<img src="@img/info.svg" alt="info">
+							</h4>
+							<div class="bottom-evaluation__content content-evaluation-bottom">
+								<div class="content-evaluation-bottom__left">
+									<div class="content-evaluation-bottom__group">
+										<div class="content-evaluation-bottom__specify">
+											<span>Укажите средний чек</span>
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input">
+											<span>руб</span>
+										</div>
+									</div>
+									<div class="content-evaluation-bottom__group">
+										<p>Мы посчитаем упущенную выручку в связи с наличием негативных ресурсов в поисковой выдаче</p>
+									</div>
+								</div>
+								<div class="content-evaluation-bottom__right">
+									<div class="content-evaluation-bottom__group content-evaluation-bottom__group_border">
+										<img src="@img/evaluation/i.png" alt="i">
+										<span>irecommend.ru</span>
+										<a href="https://irecommend.ru">https://irecommend.ru/conte...</a>
+										<img src="@img/evaluation/lock-ev-1421.svg" alt="Заблокировано">
+									</div>
+									<div class="content-evaluation-bottom__group content-evaluation-bottom__group_bg-blue">
+										<p>По нашим расчетм на этом сайте вы теряете ~29000 руб в месяц. Это наиболее проблемный ресурс. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>-->
+					<section class="content__paid paid">
+						<div class="paid__left">
+							<h4 class="paid__grand-text">Вы теряете на негативной репутации ~23 000 руб. в день или ~698 321 руб. в месяц </h4>
+							<p class="paid__text">Ваша репутация в интернете влияет на продажи. Если вы не занимаетесь репутацией вы теряете деньги. По нашим наблюдениям чаще всего люди пишут негатив в интернете. С помощью сервиса Brandscore вы можете отследить площадки на которых пишут негатив и влиять на это. </p>
+							<span class="paid__grand-text">Разблокируйте полный функционал</span>
+							<a href="#" class="paid__link">Перейти на платный тариф </a>
+						</div>
+						<div class="paid__right">
+							<div class="paid__logo">
+								<img src="@img/paid/Logotype.svg" alt="SIDORIN">
+								<span class="paid__logo-text">Sidorin Lab</span>
+							</div>
+							<p class="paid__text">Если вы хотите поручить управление репутацией профессионалам перейдите на сайт компании SidorinLab и оставьте заявку. Мы займемся вашей репутацией</p>
+							<a href="#" class="paid__link paid__link_right">Обратиться к профессионалам</a>
+						</div>
+					</section>
+					<section class="content__platforms platforms">
+						<h3 class="platforms__title">
+							<span>Распределение сайтов с отзывами по типам площадок <img src="@img/info.svg" alt="info"></span>
+						</h3>
+						<div class="platforms__content">
+							<div class="platforms__item item-platforms">
+								<div class="item-platforms__left">
+									<span class="item-platforms__title">Yandex</span>
+									<div class="item-platforms__img">
+										<img src="@img/platforms/lock.svg" alt="Заблокировано">
+									</div>
+								</div>
+								<div class="item-platforms__right">
+									<table>
+										<tbody>
+											<tr>
+												<th>Домен</th>
+												<th colspan="2">URL</th>
+											</tr>
+											<tr><th colspan="3">Карточки в отзовиках</th></tr>
+											<tr>
+												<td ><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+												<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a></td>
+												<td><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+											</tr>
+											<tr>
+												<td ><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+												<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a></td>
+												<td><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+											</tr>
+											<tr><th colspan="3">Маркетплейсы и e-commerce</th></tr>
+											<tr>
+												<td ><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+												<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a></td>
+												<td><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="platforms__item item-platforms">
+								<div class="item-platforms__left">
+									<span class="item-platforms__title">Google</span>
+									<div class="item-platforms__img -ibg">
+										<img src="@img/platforms/diagr-g-b.png" alt="Диаграмма">
+									</div>
+									<div class="item-platforms__bottom">
+										<div class="item-platforms__exemplar">
+											<div class="item-platforms__point circkle" style="background: #A155B9;"></div>
+											<span class="item-platforms__text">Карточки в отзовиках</span>
+										</div>
+										<div class="item-platforms__exemplar">
+											<div class="item-platforms__point circkle" style="background: #16bfd6;"></div>
+											<span class="item-platforms__text">Ресурсы</span>
+										</div>
+									</div>
+								</div>
+								<div class="item-platforms__right">
+									<table>
+										<tbody>
+											<tr>
+												<th>Домен</th>
+												<th colspan="2">URL</th>
+											</tr>
+											<tr><th colspan="3">Карточки в отзовиках</th></tr>
+											<tr>
+												<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+												<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a></td>
+												<td><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+											</tr>
+											<tr>
+												<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+												<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a></td>
+												<td><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+											</tr>
+											<tr><th colspan="3">Маркетплейсы и e-commerce</th></tr>
+											<tr>
+												<td width="150px"><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+												<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a></td>
+												<td><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<p class="platforms__notification">На бесплатном тарифе представлено всего 3 ресурса для каждой ПС</p>
+						<div class="platforms__bottom bottom-platforms">
+							<div class="bottom-platforms__item">
+								<h5 class="bottom-platforms__title"><span style="background: #A155B9;" class="circkle"></span><span>Карточки в отзовиках</span></h5>
+								<p class="bottom-platforms__text">Присутствие отзывов о компании на сайтах отзовиков играет важную роль в формировании ее онлайн репутации. Когда пользователи оставляют отзывы на таких сайтах, это дает им возможность поделиться своими реальными опытами и впечатлениями от работы с компанией.</p>
+							</div>
+							<div class="bottom-platforms__item">
+								<h5 class="bottom-platforms__title"><span style="background: #2C24CD;" class="circkle"></span><span>Маркетплейсы и e-commerce</span></h5>
+								<p class="bottom-platforms__text">Отзывы о компании на маркетплейсах, где происходит покупка и продажа товаров или услуг, могут помочь покупателям оценить надежность и качество предлагаемых продуктов или услуг. Положительные отзывы могут привлечь больше клиентов, в то время как отрицательные отзывы могут иметь отрицательное влияние на репутацию компании</p>
+							</div>
+							<div class="bottom-platforms__item">
+								<h5 class="bottom-platforms__title"><span style="background: #16bfd6;" class="circkle"></span><span>Маркетплейсы и e-commerce</span></h5>
+								<p class="bottom-platforms__text">Это все остальные ресурсы которые не вошли в определенные категории: hr, геосервисы, маркетплейсы, медицина, недвижимость, авто, маркетинг. </p>
+							</div>
+						</div>
+					</section>
+					<section class="content__platforms platforms tonal">
+						<h3 class="platforms__title">
+							<span>Распределение сайтов с отзывами по тональности</span>
+							<img src="@img/info.svg" alt="info">
+						</h3>
+						<div class="platforms__content">
+							<div class="platforms__item item-platforms">
+								<div class="item-platforms__left">
+									<span class="item-platforms__title">Yandex</span>
+									<div class="item-platforms__img">
+										<img src="@img/platforms/lock.svg" alt="Заблокировано">
+									</div>
+								</div>
+								<div class="item-platforms__right">
+									<table>
+										<tbody>
+											<tr>
+												<th>Домен</th>
+												<th>URL</th>
+												<th>Тональность</th>
+											</tr>
+											<tr><th colspan="3">Карточки в отзовиках</th></tr>
+											<tr>
+												<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+												<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>позитив</td>
+											</tr>
+											<tr>
+												<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+												<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>негатив</td>
+											</tr>
+											<tr><th colspan="3">Маркетплейсы и e-commerce</th></tr>
+											<tr>
+												<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+												<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>нейтрал</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="platforms__item item-platforms">
+								<div class="item-platforms__left">
+									<span class="item-platforms__title">Google</span>
+									<div class="item-platforms__img -ibg">
+										<img src="@img/platforms/diagr-g-b.png" alt="Диаграмма">
+									</div>
+									<div class="item-platforms__bottom">
+										<div class="item-platforms__exemplar">
+											<div class="item-platforms__point circkle" style="background: #006847;"></div>
+											<span class="item-platforms__text">позитив</span>
+										</div>
+										<div class="item-platforms__exemplar">
+											<div class="item-platforms__point circkle" style="background: #EE111E;"></div>
+											<span class="item-platforms__text">негатив</span>
+										</div>
+										<div class="item-platforms__exemplar">
+											<div class="item-platforms__point circkle" style="background: #616161;"></div>
+											<span class="item-platforms__text">нейтрал</span>
+										</div>
+									</div>
+								</div>
+								<div class="item-platforms__right">
+									<table>
+										<tbody>
+											<tr>
+												<th>Домен</th>
+												<th>URL</th>
+												<th>Тональность</th>
+											</tr>
+											<tr><th colspan="3">Карточки в отзовиках</th></tr>
+											<tr>
+												<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+												<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>позитив</td>
+											</tr>
+											<tr>
+												<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+												<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>негатив</td>
+											</tr>
+											<tr><th colspan="3">Маркетплейсы и e-commerce</th></tr>
+											<tr>
+												<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+												<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+												<td>нейтрал</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<p class="platforms__notification">На бесплатном тарифе представлено всего 3 ресурса для каждой ПС</p>
+						<div class="platforms__bottom bottom-platforms">
+							<div class="bottom-platforms__item">
+								<h5 class="bottom-platforms__title">На ресурсах, связанных с отзывами о компании, преобладает негативная тональность отзывов.</h5>
+								<p class="bottom-platforms__text">Большое количество негативных отзывов может указывать на проблемы или недостатки в работе компании. Это может быть связано с качеством предоставляемых услуг, клиентским обслуживанием, производством или другими аспектами деятельности компании. Негативные отзывы могут отразить недовольство и негативный опыт пользователей, что может негативно сказаться на репутации компании и ее способности привлечь новых клиентов. Большое количество негативных отзывов требует немедленной реакции и улучшений в работе компании для решения выявленных проблем и улучшения опыта пользователей.</p>
+							</div>
+						</div>
+					</section>
+					<!--<section class="content__resources resources">
+						<div class="resources__top">
+							<h3 class="resources__title title">Ресурсы в выдаче и оценка</h3>
+							<input data-datepicker autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="resources__input">
+							<div class="resources__decor"></div>
+						</div>
+						<div class="resources__content content-res">
+							<div class="content-res__item">
+								<h4 class="content-res__title">Яндекс</h4>
+								<div class="content-res__item-content">
+									<div class="content-res__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Домен</th>
+													<th>URL</th>
+													<th>Оценка</th>
+													<th>Динамика</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+													<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>2.5</td>
+													<td><span class="content-res__td-din">0.5</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+													<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.3</td>
+													<td><span class="content-res__td-din">0.3</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+													<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.1</td>
+													<td><span class="content-res__td-din content-res__td-din_gray">-</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="content-res__warnings warnings-resources">
+										<div data-da=".resources__content, 767.98" class="warnings-resources__item">
+											На бесплатном тарифе представлено всего 3 ресурса для каждой ПС
+										</div>
+										<div class="warnings-resources__item warnings-resources__item_blue">
+											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
+											<div class="warnings-resources__content">
+												<ul class="warnings-resources__list">
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг увеличился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг уменьшился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг не изменился:</span>
+													</li>
+												</ul>
+												<div class="warnings-resources__img">
+													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-res__item">
+								<h4 class="content-res__title">Google</h4>
+								<div class="content-res__item-content">
+									<div class="content-res__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Домен</th>
+													<th>URL</th>
+													<th>Оценка</th>
+													<th>Динамика</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+													<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>2.5</td>
+													<td><span class="content-res__td-din">0.5</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+													<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.3</td>
+													<td><span class="content-res__td-din">0.3</span></td>
+												</tr>
+												<tr>
+													<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
+													<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+													<td>3.1</td>
+													<td><span class="content-res__td-din content-res__td-din_red">0.1</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="content-res__warnings warnings-resources">
+										<div class="warnings-resources__item warnings-resources__item_blue">
+											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
+											<div class="warnings-resources__content">
+												<ul class="warnings-resources__list">
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг увеличился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг уменьшился:</span>
+													</li>
+													<li class="warnings-resources__item">
+														<span class="warnings-resources__decor"></span>
+														<span class="warnings-resources__text">рейтинг не изменился:</span>
+													</li>
+												</ul>
+												<div class="warnings-resources__img">
+													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content__graph graph">
+						<img src="@img/graph/image 28.jpg" alt="">
+					</section>
+					<section class="content__gentable gentable">
+						<h4 class="gentable__title">Общая таблица ресурсов</h4>
+						<p class="gentable__ad">У вас есть неразмеченные ресурсы.
+							<a href="#" class="gentable__link">Перейти к разметке</a>
+						</p>
+						<div class="gentable__content">
+							<table>
+								<thead>
+									<tr>
+										<th><span>Домен</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>URL</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Шкала</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Оценка</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Заголовок</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Описание</span><img src="@img/info.svg" alt="info"></th>
+										<th><span>Тональность</span><img src="@img/info.svg" alt="info"></th>
+									</tr>
+									<tr>
+										<th colspan="7"><span>Карточки в отзовиках</span><img src="@img/info.svg" alt="info"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
+										<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">5 -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="@img/platforms/irecommend.jpg" alt="spr">spr.ru</td>
+										<td><a href="spr.ru">spr.ru</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">- -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
+										<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
+										<td>5</td>
+										<td><span class="content-res__td-din">- -</span></td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
+										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="gentable__ad">На бесплатном тарифе представлено всего 3 ресурса для каждой ПС</p>
+						</div>
+					</section>
+					<section class="content__recommendations recommendations">
+						<h4 class="recommendations__title">Рекомендации</h4>
+						<div class="recommendations__items">
+							<div class="recommendations__item item-rec">
+								<h5 class="item-rec__title">Основная категория площадок не установлена</h5>
+								<p class="item-rec__main-text">Это означает, что не достаточно задействованы основные площадки из категории отзовиков , которые дадут быстрый рост и изменят поисковую выдачу</p>
+								<ol class="item-rec__list">
+									<li class="item-rec__punkt">
+										<p>Используйте общие платформы: Проверьте популярные платформы отзывов, такие как otzovik, irecommend, zoon. Эти платформы позволяют пользователям оставлять отзывы о различных типах компаний и услуг, и они могут предоставить общую картину о репутации вашей компании.</p>
+									</li>
+									<li class="item-rec__punkt">
+										<p>Обратитесь к клиентам: Активно общайтесь с вашими клиентами и просите их оставлять отзывы о вашей компании на платформах, которые они предпочитают использовать. Это может быть в виде персональной просьбы или включения ссылок на платформы отзывов в ваши электронные письма или веб-сайт.</p>
+									</li>
+								</ol>
+								<div class="item-rec__brands brands-rec">
+									<a href="otzovik.com" class="brands-rec__link">otzovik.com</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/otzovik.svg" alt="Отзовик"></div>
+								</div>
+								<div class="item-rec__brands brands-rec">
+									<a href="zoon.ru" class="brands-rec__link">zoon</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/zoon.svg" alt="zoon"></div>
+								</div>
+								<div class="item-rec__brands brands-rec">
+									<a href="irecommend.ru" class="brands-rec__link">irecommend</a>
+									<div class="brands-rec__img"><img src="@img/recommendations/irecommend.svg" alt="irecommend"></div>
+								</div>
+							</div>
+						</div>
+						<p class=" gentable__ad">На бесплатном тарифе представлено всего 1 рекомендация. Перейдите на <a href="#" class="gentable__link">платный тариф</a> и получите максимальное количество рекомендаций</p>
+					</section>
+					<section class="content__paid paid">
+						<div class="paid__left">
+							<h4 class="paid__grand-text">Вы теряете на негативной репутации ~23 000 руб. в день или ~698 321 руб. в месяц </h4>
+							<p class="paid__text">Ваша репутация в интернете влияет на продажи. Если вы не занимаетесь репутацией вы теряете деньги. По нашим наблюдениям чаще всего люди пишут негатив в интернете. С помощью сервиса Brandscore вы можете отследить площадки на которых пишут негатив и влиять на это. </p>
+							<span class="paid__grand-text">Разблокируйте полный функционал</span>
+							<a href="#" class="paid__link">Перейти на платный тариф </a>
+						</div>
+						<div class="paid__right">
+							<div class="paid__logo">
+								<img src="@img/paid/Logotype.jpg" alt="SIDORIN">
+								<span class="paid__logo-text">Sidorin Lab</span>
+							</div>
+							<p class="paid__text">Если вы хотите поручить управление репутацией профессионалам перейдите на сайт компании SidorinLab и оставьте заявку. Мы займемся вашей репутацией</p>
+							<a href="#" class="paid__link paid__link_right">Обратиться к профессионалам</a>
+						</div>
+					</section> -->
+				</div>
+			</main>
 		</div>
+		@@include('html/_js.htm',{})
 	</body>
-	<style>
-		@charset "UTF-8";
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-		* ,*::before, *::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box; 
-		}
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100%;
-			color: #fff;
-			background-color: #35b9ca;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 1rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #ebe691
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #636363;
-		}
-			a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage{
-			padding: 30px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage{
-				padding:30px 15px;
-			}
-		}
-		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #000000;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			 h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info{
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
-
-		.rootpage__list{
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child){
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px){
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius:40px;
-			padding: 20px;
-		}
-		}
-		.rootpage__contacts{
-			background: #32b5a4;
-			
-		}
-		.rootpage__contacts a{
-			color: #ebe691;
-		}
-		.rootpage__tnx{
-			background: #792744;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
 </html>

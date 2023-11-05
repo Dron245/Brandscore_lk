@@ -1,7 +1,56 @@
 // Заголовки, общие БЄМ блоки и прочее...
-	.title {
-		font-size: 19px;
-		// font-style: normal;
-		font-weight: 700;
-		// line-height: 14px;
-	}
+.title {
+	font-size: 20px;
+	// font-style: normal;
+	font-weight: 700;
+		line-height: 1;
+}
+
+.button {
+	// display: inline-block;
+	border-radius: 5px;
+	background: #E00815;
+	font-weight: 700;
+	line-height: 25px; /* 250% */
+	color: #fff;
+	padding: toRem(7) toRem(20);
+}
+
+table {
+	border: 1px solid #E4E4E4;
+	border-collapse: collapse;
+}
+
+th {
+	background: #F8F8F8;
+	height: 42px;
+	font-weight: 700;
+	
+}
+
+tr {
+	text-align: center;
+}
+
+tr a {
+	color: #E00815;
+	text-decoration: underline;
+}
+
+td {
+	padding: 0px 12px ;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+tr:last-child td {
+	padding-bottom: 30px;
+}
+
+.circkle {
+	display: inline-block;
+	width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin-right: 8px;
+}

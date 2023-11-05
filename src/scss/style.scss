@@ -46,7 +46,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 // Брейк-поинты
 $pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
 $tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
-$mobile: em(430.98); // Телефоны L
+$mobile: em(768.98); // Телефоны L
 $mobileSmall: em(479.98); // Телефоны S
 
 // Тип адаптива:
@@ -152,3 +152,9 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "main";
+@import "summary";
+@import "evaluation";
+@import "paid";
+@import "platforms";
+
