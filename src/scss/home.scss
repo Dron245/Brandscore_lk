@@ -11,7 +11,7 @@
 		align-items: center;
 		justify-content: space-between;
 		box-sizing: border-box;
-		position: fixed;
+		
 		@media (max-width:$tablet){
 			width: 264px;
 			transition: margin-left 0.3s;
