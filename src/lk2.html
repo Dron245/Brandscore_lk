@@ -9,7 +9,7 @@
 				<div class="page__left-menu left-menu-wrapper">
 				</div>
 				<div class="page__content content-desktop content">
-					<!-- <section class="content__main">
+					<section class="content__main">
 						<div class="main__top top">
 							<a href="#" class="top__logo">
 								<svg version="1.1" id="Layer_1" x="0px" y="0px" width="40" viewBox="0 0 40 40.000027" enable-background="new 0 0 604 604" xml:space="preserve" sodipodi:docname="logo.svg" height="40.000027" inkscape:version="1.2.2 (b0a8486541, 2022-12-01)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs8796"></defs><sodipodi:namedview id="namedview8794" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false" inkscape:zoom="0.9951006" inkscape:cx="305.99921" inkscape:cy="378.35371" inkscape:window-width="1920" inkscape:window-height="1016" inkscape:window-x="0" inkscape:window-y="27" inkscape:window-maximized="1" inkscape:current-layer="Layer_1"></sodipodi:namedview>
@@ -651,7 +651,7 @@
 							<p class="paid__text">Если вы хотите поручить управление репутацией профессионалам перейдите на сайт компании SidorinLab и оставьте заявку. Мы займемся вашей репутацией</p>
 							<a href="#" class="paid__link paid__link_right">Обратиться к профессионалам</a>
 						</div>
-					</section>-->
+					</section>
 					<section class="content__platforms platforms">
 						<h3 class="platforms__title">
 							<span>Распределение сайтов с отзывами по типам площадок <img src="@img/info.svg" alt="info"></span>
@@ -784,6 +784,16 @@
 									<div class="item-platforms__img -ibg">
 										<img src="@img/tonality/diagr-y-p.png" alt="Заблокировано">
 									</div>
+									<div class="item-platforms__bottom">
+										<div class="item-platforms__exemplar">
+											<div class="item-platforms__point circkle" style="background: #006847;"></div>
+											<span class="item-platforms__text">позитив</span>
+										</div>
+										<div class="item-platforms__exemplar">
+											<div class="item-platforms__point circkle" style="background: #16bfd6;"></div>
+											<span class="item-platforms__text">не определено</span>
+										</div>
+									</div>
 								</div>
 								<div class="item-platforms__right">
 									<table>
@@ -808,7 +818,7 @@
 											<tr>
 												<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
 												<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a></td>
-												<td style="color:#616161"></td>>нейтрал</td>
+												<td style="color:#616161">нейтрал</td>
 											</tr>
 										</tbody>
 									</table>
@@ -860,7 +870,7 @@
 											<tr>
 												<td><img src="@img/platforms/sber.jpg" alt="Сбермегамаркет">sbermegamarket.ru</td>
 												<td><a href="https://sbermegamarket.ru/review/divany/">https://sbermegamarket.ru/review/divany/bran</a></td>
-												<td style="color:#616161"></td>>нейтрал</td>
+												<td style="color:#616161">нейтрал</td>
 											</tr>
 										</tbody>
 									</table>
@@ -869,7 +879,6 @@
 								</div>
 							</div>
 						</div>
-						<p class="platforms__notification">На бесплатном тарифе представлено всего 3 ресурса для каждой ПС</p>
 						<div class="platforms__bottom bottom-platforms">
 							<div class="bottom-platforms__item">
 								<h5 class="bottom-platforms__title">На ресурсах, связанных с отзывами о компании, преобладает негативная тональность отзывов.</h5>
@@ -877,11 +886,11 @@
 							</div>
 						</div>
 					</section>
-					<!--<section class="content__resources resources">
+					<section class="content__resources resources">
 						<div class="resources__top">
 							<h3 class="resources__title title">Ресурсы в выдаче и оценка</h3>
-							<input data-datepicker autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="resources__input">
-							<div class="resources__decor"></div>
+							<input data-datepicker3 autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="esources__input resources__input_pl input">
+							
 						</div>
 						<div class="resources__content content-res">
 							<div class="content-res__item">
@@ -926,25 +935,22 @@
 											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
 											<div class="warnings-resources__content">
 												<ul class="warnings-resources__list">
-													<li class="warnings-resources__item">
+													<li class="warnings-resources__item-list">
 														<span class="warnings-resources__decor"></span>
 														<span class="warnings-resources__text">рейтинг увеличился:</span>
 														<span class="warnings-resources__quantity">2</span>
 													</li>
-													<li class="warnings-resources__item">
+													<li class="warnings-resources__item-list">
 														<span class="warnings-resources__decor"></span>
 														<span class="warnings-resources__text">рейтинг уменьшился:</span>
 														<span class="warnings-resources__quantity">1</span>
 													</li>
-													<li class="warnings-resources__item">
+													<li class="warnings-resources__item-list">
 														<span class="warnings-resources__decor"></span>
 														<span class="warnings-resources__text">рейтинг не изменился:</span>
 														<span class="warnings-resources__quantity">1</span>
 													</li>
 												</ul>
-												<div class="warnings-resources__img">
-													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
-												</div>
 											</div>
 										</div>
 									</div>
@@ -992,25 +998,22 @@
 											<span class="warnings-resources__title">Динамика оценки проектов в Yandex</span>
 											<div class="warnings-resources__content">
 												<ul class="warnings-resources__list">
-													<li class="warnings-resources__item">
+													<li class="warnings-resources__item-list">
 														<span class="warnings-resources__decor"></span>
 														<span class="warnings-resources__text">рейтинг увеличился:</span>
 														<span class="warnings-resources__quantity">2</span>
 													</li>
-													<li class="warnings-resources__item">
+													<li class="warnings-resources__item-list">
 														<span class="warnings-resources__decor"></span>
 														<span class="warnings-resources__text">рейтинг уменьшился:</span>
 														<span class="warnings-resources__quantity">1</span>
 													</li>
-													<li class="warnings-resources__item">
+													<li class="warnings-resources__item-list">
 														<span class="warnings-resources__decor"></span>
 														<span class="warnings-resources__text">рейтинг не изменился:</span>
 														<span class="warnings-resources__quantity">1</span>
 													</li>
 												</ul>
-												<div class="warnings-resources__img">
-													<img src="@img/resources/lock-res.svg" alt="Заблокировано">
-												</div>
 											</div>
 										</div>
 									</div>
@@ -1027,16 +1030,16 @@
 							<a href="#" class="gentable__link">Перейти к разметке</a>
 						</p>
 						<div class="gentable__content">
-							<table>
+							<table width="1110px">
 								<thead>
 									<tr>
-										<th><span>Домен</span><img src="@img/info.svg" alt="info"></th>
-										<th><span>URL</span><img src="@img/info.svg" alt="info"></th>
-										<th><span>Шкала</span><img src="@img/info.svg" alt="info"></th>
+										<th width="175px"><span>Домен</span><img src="@img/info.svg" alt="info"></th>
+										<th width="220"><span>URL</span><img src="@img/info.svg" alt="info"></th>
+										<th width="110px"><span>Шкала</span><img src="@img/info.svg" alt="info"></th>
 										<th><span>Оценка</span><img src="@img/info.svg" alt="info"></th>
-										<th><span>Заголовок</span><img src="@img/info.svg" alt="info"></th>
-										<th><span>Описание</span><img src="@img/info.svg" alt="info"></th>
-										<th><span>Тональность</span><img src="@img/info.svg" alt="info"></th>
+										<th width="180"><span>Заголовок</span><img src="@img/info.svg" alt="info"></th>
+										<th width="200"><span>Описание</span><img src="@img/info.svg" alt="info"></th>
+										<th width="30"><span>Тональность</span><img src="@img/info.svg" alt="info"></th>
 									</tr>
 									<tr>
 										<th colspan="7"><span>Карточки в отзовиках</span><img src="@img/info.svg" alt="info"></th>
@@ -1046,8 +1049,8 @@
 									<tr>
 										<td><img src="@img/platforms/irecommend.jpg" alt="irecommend">irecommend.ru</td>
 										<td><a href="https://irecommend.ru/content/magazin-mebeli">https://irecommend.ru/content/magazin-mebeli</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
-										<td>5</td>
-										<td><span class="content-res__td-din">5 -</span></td>
+										<td style="text-align: center;">5</td>
+										<td style="text-align: center;"><span class="content-res__td-din">5 -</span></td>
 										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
 										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
 										<td></td>
@@ -1055,8 +1058,8 @@
 									<tr>
 										<td><img src="@img/platforms/irecommend.jpg" alt="spr">spr.ru</td>
 										<td><a href="spr.ru">spr.ru</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
-										<td>5</td>
-										<td><span class="content-res__td-din">- -</span></td>
+										<td style="text-align: center;">5</td>
+										<td style="text-align: center;"><span class="content-res__td-din">- -</span></td>
 										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
 										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
 										<td></td>
@@ -1064,8 +1067,8 @@
 									<tr>
 										<td><img src="@img/platforms/otzovik.jpg" alt="Отзовик">otzovik.com</td>
 										<td><a href="https://otzovik.com/reviews/hoff">https://otzovik.com/reviews/hoff</a><img src="@img/platforms/lock1521.png" alt="Заблокировано"></td>
-										<td>5</td>
-										<td><span class="content-res__td-din">- -</span></td>
+										<td style="text-align: center;">5</td>
+										<td style="text-align: center;"><span class="content-res__td-din">- -</span></td>
 										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</td>
 										<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio atque a iure! Sit vitae quasi sequi harum ex assumenda.</td>
 										<td></td>
@@ -1090,17 +1093,19 @@
 										<p>Обратитесь к клиентам: Активно общайтесь с вашими клиентами и просите их оставлять отзывы о вашей компании на платформах, которые они предпочитают использовать. Это может быть в виде персональной просьбы или включения ссылок на платформы отзывов в ваши электронные письма или веб-сайт.</p>
 									</li>
 								</ol>
-								<div class="item-rec__brands brands-rec">
-									<a href="otzovik.com" class="brands-rec__link">otzovik.com</a>
-									<div class="brands-rec__img"><img src="@img/recommendations/otzovik.svg" alt="Отзовик"></div>
-								</div>
-								<div class="item-rec__brands brands-rec">
-									<a href="zoon.ru" class="brands-rec__link">zoon</a>
-									<div class="brands-rec__img"><img src="@img/recommendations/zoon.svg" alt="zoon"></div>
-								</div>
-								<div class="item-rec__brands brands-rec">
-									<a href="irecommend.ru" class="brands-rec__link">irecommend</a>
-									<div class="brands-rec__img"><img src="@img/recommendations/irecommend.svg" alt="irecommend"></div>
+								<div class="item-rec__brands">
+									<div class="item-rec__brand brands-rec">
+										<a href="otzovik.com" class="brands-rec__link">otzovik.com</a>
+										<div class="brands-rec__img"><img src="@img/recommendations/otzovik.svg" alt="Отзовик"></div>
+									</div>
+									<div class="item-rec__brand brands-rec">
+										<a href="zoon.ru" class="brands-rec__link">zoon</a>
+										<div class="brands-rec__img"><img src="@img/recommendations/zoon.svg" alt="zoon"></div>
+									</div>
+									<div class="item-rec__brand brands-rec">
+										<a href="irecommend.ru" class="brands-rec__link">irecommend</a>
+										<div class="brands-rec__img"><img src="@img/recommendations/irecommend.svg" alt="irecommend"></div>
+									</div>
 								</div>
 							</div>
 							<div class="recommendations__item item-rec negativ">
@@ -1180,7 +1185,7 @@
 										<p>Не забывайте об отзывах с других платформ: Если у вас есть хорошие отзывы на других платформах, например, на сайтах отзовиков или социальных медиа, не забывайте о них и публикуйте на своем сайте или в социальных сетях.</p>
 									</li>
 								</ol>
-								<p class="itepm-rec__text">С помощью этих рекомендаций вы можете стимулировать клиентов оставлять более активные отзывы и участвовать в обратной связи, что поможет сформировать более разнообразную картину вашей репутации и предоставит вам ценные идеи для улучшения вашего бизнеса.</p>
+								<p class="item-rec__text">С помощью этих рекомендаций вы можете стимулировать клиентов оставлять более активные отзывы и участвовать в обратной связи, что поможет сформировать более разнообразную картину вашей репутации и предоставит вам ценные идеи для улучшения вашего бизнеса.</p>
 							</div>
 							<div class="recommendations__item item-rec neitral">
 								<h5 class="item-rec__title">Большинство площадок с нейтральной оценкой</h5>
@@ -1205,7 +1210,7 @@
 										<p>Возможности обратной связи: Облегчите процесс обратной связи для клиентов, предоставляя различные каналы связи, такие как онлайн-чаты, электронная почта или телефон. Это поможет клиентам легко выразить свои мнения и позволит вам быстро реагировать на их запросы и комментарии.</p>
 									</li>
 								</ol>
-								<p class="itepm-rec__text">С помощью этих рекомендаций вы можете стимулировать клиентов оставлять более активные отзывы и участвовать в обратной связи, что поможет сформировать более разнообразную картину вашей репутации и предоставит вам ценные идеи для улучшения вашего бизнеса.</p>
+								<p class="item-rec__text">С помощью этих рекомендаций вы можете стимулировать клиентов оставлять более активные отзывы и участвовать в обратной связи, что поможет сформировать более разнообразную картину вашей репутации и предоставит вам ценные идеи для улучшения вашего бизнеса.</p>
 							</div>
 							<div class="recommendations__item item-rec no-issue">
 								<h5 class="item-rec__title">Упоминаний нет в выдаче</h5>
@@ -1246,7 +1251,7 @@
 							<div class="recommendations__item item-rec no-site-issue">
 								<h5 class="item-rec__title">Отсутствие сайта компании в выдаче</h5>
 								<p class="item-rec__main-text">Создайте собственный канал обратной связи: рассмотрите возможность создания собственного канала обратной связи на вашем веб-сайте или в социальных сетях, где клиенты могут оставить свои отзывы. Это поможет вам получить обратную связь от клиентов и создать свой собственный источник отзывов. <br>Например создайте страницу с отзывами </p>
-								<p class="itepm-rec__text">Создание собственной страницы с отзывами на вашем сайте имеет несколько преимуществ с точки зрения ORM (управления онлайн-репутацией):</p>
+								<p class="item-rec__text">Создание собственной страницы с отзывами на вашем сайте имеет несколько преимуществ с точки зрения ORM (управления онлайн-репутацией):</p>
 								<ol class="item-rec__list">
 									<li class="item-rec__punkt">
 										<p>
@@ -1274,17 +1279,17 @@
 										</p>
 									</li>
 								</ol>
-								<p class="itepm-rec__text">В целом, создание собственной страницы с отзывами на вашем сайте помогает вам активно управлять и контролировать вашу репутацию, повысить доверие пользователей, укрепить вашу позицию в поисковых системах и уменьшить зависимость от внешних платформ отзывов.</p>
+								<p class="item-rec__text">В целом, создание собственной страницы с отзывами на вашем сайте помогает вам активно управлять и контролировать вашу репутацию, повысить доверие пользователей, укрепить вашу позицию в поисковых системах и уменьшить зависимость от внешних платформ отзывов.</p>
 							</div>
 							<div class="recommendations__item item-rec no-site-geo">
 								<h5 class="item-rec__title">Отсутствие сайта компании в геосервисах</h5>
 								<p class="item-rec__main-text">Ваша компания отсутствует в геосервисах. Мы рекомендуем зарегистрировать компанию/услугу/персону, заполнить описание и предложить текущим клиентам опубликовать несколько отзывов, чтобы поднять активность на странице.</p>
 								<span class="item-rec__main-title">Яндекс карты</span>
-								<p class="item-rec__text">Яндекс.Бизнес предоставляет вам возможность создания бизнес-страницы с контактной информацией, описанием вашей компании и режимом работы. Это позволяет вашим клиентам быстро найти и связаться с вами. <br>
+								<p class="item-rec__text">Яндекс.Бизнес предоставляет вам возможность создания бизнес-страницы с контактной информацией, описанием вашей компании и режимом работы. Это позволяет вашим клиентам быстро найти и связаться с вами. <br><br>
 
-																	Управление отзывами: Вы сможете отвечать на отзывы клиентов и следить за репутацией вашей компании в сервисах Яндекса, таких как "Отзывы" и "Карты". Это помогает вам активно взаимодействовать с клиентами, решать проблемы и повышать уровень доверия к вашему бизнесу. <br>
+																	Управление отзывами: Вы сможете отвечать на отзывы клиентов и следить за репутацией вашей компании в сервисах Яндекса, таких как "Отзывы" и "Карты". Это помогает вам активно взаимодействовать с клиентами, решать проблемы и повышать уровень доверия к вашему бизнесу. <br><br>
 																	
-																	В целом, регистрация в Яндекс.Бизнес предоставляет вам инструменты для улучшения онлайн-присутствия, управления репутацией и рекламы вашего бизнеса <br>
+																	В целом, регистрация в Яндекс.Бизнес предоставляет вам инструменты для улучшения онлайн-присутствия, управления репутацией и рекламы вашего бизнеса <br><br>
 																	
 																	Инструкция по регистрации: <br>
 																	<a href="https://yandex.ru/support/business-priority/add-company/add-org.html">https://yandex.ru/support/business-priority/add-company/add-org.html</a>
@@ -1292,11 +1297,11 @@
 								<span class="item-rec__main-title">2ГИС</span>
 								<p class="item-rec__text">
 									Регистрация в 2ГИС (ДубльГИС) может предоставить вам следующие преимущества:
-									Увеличение онлайн-видимости: Регистрация в 2ГИС позволит вашей компании быть видимой в популярном сервисе справочника, который используется миллионами пользователей. Ваша информация, такая как контактные данные, адрес, описание и режим работы, будет доступна клиентам, которые ищут бизнесы и услуги в вашем районе <br>
+									Увеличение онлайн-видимости: Регистрация в 2ГИС позволит вашей компании быть видимой в популярном сервисе справочника, который используется миллионами пользователей. Ваша информация, такая как контактные данные, адрес, описание и режим работы, будет доступна клиентам, которые ищут бизнесы и услуги в вашем районе <br><br>
 
-									Привлечение новых клиентов: 2ГИС является популярным инструментом поиска и выбора компаний и услуг в вашем городе. Регистрация в 2ГИС поможет вам достичь новой аудитории и привлечь потенциальных клиентов, которые активно пользуются этим сервисом <br>
+									Привлечение новых клиентов: 2ГИС является популярным инструментом поиска и выбора компаний и услуг в вашем городе. Регистрация в 2ГИС поможет вам достичь новой аудитории и привлечь потенциальных клиентов, которые активно пользуются этим сервисом <br><br>
 
-									Управление информацией о компании: Вы сможете добавлять и обновлять информацию о вашей компании, такую как контакты, услуги, фотографии и отзывы клиентов. Это позволяет вам поддерживать актуальность и полноту данных о вашем бизнесе в 2ГИС <br>
+									Управление информацией о компании: Вы сможете добавлять и обновлять информацию о вашей компании, такую как контакты, услуги, фотографии и отзывы клиентов. Это позволяет вам поддерживать актуальность и полноту данных о вашем бизнесе в 2ГИС <br><br>
 
 									Взаимодействие с клиентами: Вы сможете отвечать на отзывы и комментарии клиентов, отвечать на вопросы и предоставлять информацию о вашем бизнесе. Это поможет вам установить лояльность и доверие к вашей компании, а также решать проблемы или предлагать дополнительные услуги <br>
 									Ссылка на регистрацию: <a href="https://business.2gis.ru/">https://business.2gis.ru/</a>
@@ -1433,7 +1438,7 @@
 								</p>
 							</div>
 						</div>
-					</section> -->
+					</section>
 				</div>
 			</main>
 		</div>

@@ -1,0 +1,245 @@
+.content {
+
+	&__resources {
+		margin-top: 74px;
+		border-radius: 5px;
+		background: #FFF;
+		box-shadow: 0px 0px 15px 7px #F3F6F8;
+		padding: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		& .item-platforms__link{
+			line-height: 1.1;
+			margin-bottom: 10px;
+			@media (max-width:$pc){
+			 margin-left: 20px; 
+		 }
+		 }
+		 
+		@media (max-width:$mobile){
+			 margin-top: 39px; 
+			 padding-left: 10px;
+			 padding-right: 10px;
+			 & .item-platforms__link{
+				margin-left: 20px;
+				
+			 }
+		}
+	}
+}
+.resources {
+
+	&__top {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		display: inline-block;
+		&::after{
+			content:'';
+			position: absolute;
+			height: 1px;
+			background: #E6E6E6;
+			width: 50%;
+			top: 47%;
+			right: 0;
+			transform: translateY(-50%);
+			@media (max-width:$mobile){
+				 display: none;
+			}
+		}
+	}
+
+	&__input {
+		margin-left: 20px;
+		background: #FBFBFB url(../img/top/calendar.svg) no-repeat right 17px center;
+		@media (max-width:$mobile){
+			 display: none; 
+		}
+		&_pl {
+			margin-left: 20px;
+    background: #FBFBFB url(../img/top/calendar.svg) no-repeat right 17px center;
+		}
+	}
+
+	&__decor {
+	}
+
+	&__content {
+	}
+}
+.title {
+}
+.content-res {
+	@media (max-width: em(1340)){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__item {
+		&:not(:last-child) {margin-bottom: toRem(30);}
+	}
+
+	&__title {
+		font-size: toRem(20);
+		font-weight: 700;
+		line-height: math.div(28 , 20);
+		margin-bottom: 20px;
+	}
+
+	&__item-content {
+		display: flex;
+		@media (max-width:em(1340)){
+			 flex-direction: column; 
+		}
+	}
+
+	&__table {
+		// width: 767px;
+		@media (max-width:$pc){
+			overflow-x: auto;
+			//  width: 100%;
+			 flex: 0 0 100%; 
+		}
+		@media (max-width:$pc){
+			margin-left: -20px;
+			margin-right: -20px; 
+			//  display: inline-block; 
+		}
+		table {
+			background-color: #fff;
+			
+			td a{
+				display: inline-block;
+				// width: 50%;
+				// outline: 1px solid ;
+			}
+			width: 767px;
+			display:inline-table;
+			// display: block;
+    		// overflow-x: auto;
+			th {
+				border-bottom: 1px solid #D3D3D3;
+				padding-left: 15px;
+			padding-right: 15px;
+			}
+			tr td:has(img, a) {
+				text-align: left;
+				position: relative;
+				// display: flex;
+				// justify-content: space-between;
+			}
+			tr a+img {
+				margin-left: 20px;
+				position: absolute;
+				right: 0;
+				// display: inline-block;
+			// color: #E00815;
+			// text-decoration: underline;
+			// width: 90%;
+			}
+			td img {
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+			td:has(img){
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			tr td:has(a){
+				// white-space: initial;
+			}
+			
+		}
+	}
+
+	&__td-din {
+		display: block;
+		width: 93px;
+		border-radius: 5px;
+		background: #53FF6E;
+		padding: 5px toRem(35);
+		&_gray {
+			background: #EAEAEA;
+		}
+
+		&_red {
+			background: #FF5D53;
+		}
+	}
+
+	&__warnings {
+	}
+}
+.warnings-resources {
+	margin-left: 36px;
+	@media (max-width: em(1340)){
+		margin-left: auto;
+		margin-right: auto;
+		 margin-top: 30px;
+		 display: inline-flex;
+	}
+	&__item {
+		padding: toRem(18) toRem(17) toRem(22) toRem(17);
+		font-size: 14px;
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+		@media (max-width: em(1340)){
+			  margin-left: auto;
+			  margin-right: auto;
+			//   display: inline-flex;
+		}
+		border-radius: 6px;
+		background: #FFCECE;
+		&_blue {
+			background: #CEEDFF;
+		}
+	}
+
+	&__title {
+		font-size: 14px;
+		font-weight: 700;
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		// justify-content: space-between;
+	}
+
+	&__list {
+		
+	}
+
+	&__item-list {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		// list-style: initial;
+		&:not(:last-child) {
+					margin-bottom: 5px;
+				}
+	}
+
+	&__decor {
+		display: inline-block;
+		flex: 0 0 3px;
+		width: 3px;
+		height: 3px;
+		background-color: #000;
+		border-radius: 100px;
+	}
+
+	&__text {
+		display: inline-block;
+		
+	}
+
+	&__img {
+		margin-left: 25px;
+	}
+}

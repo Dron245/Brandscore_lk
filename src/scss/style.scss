@@ -78,6 +78,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	background: #fbfbfb;
 	@supports (overflow: clip) {
 		overflow: clip;
 	}
@@ -157,4 +158,8 @@ body {
 @import "evaluation";
 @import "paid";
 @import "platforms";
+@import "resources";
+@import "graph";
+@import "gentable";
+@import "recommendations";
 
