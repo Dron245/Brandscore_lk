@@ -232,7 +232,8 @@
 .bottom-main {
 	padding-top: 45px;
 	@media (max-width:$mobile){
-		 padding-top: 12px; 
+		 padding-top: 12px;
+		 margin-left: 10px;
 	}
 	&__input {
 		background: #FBFBFB url('@img/top/calendar.svg') no-repeat right 17px center;

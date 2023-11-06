@@ -150,6 +150,12 @@
 			}
 			td img {
 				margin-right: 20px;
+				
+			}
+			td:has(img){
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
 		}
 	}

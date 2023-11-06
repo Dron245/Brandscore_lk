@@ -44,6 +44,16 @@
 			top: 47%;
 			right: 0;
 			transform: translateY(-50%);
+			@media (max-width: em(1300)){
+				width: 35%;
+		 }
+		 @media (max-width:$pc){
+			  width: 25%; 
+		 }
+		 transform: translateY(-50%);
+		 @media (max-width:$tablet){
+			  width: 15%;
+		 }
 			@media (max-width:$mobile){
 				 display: none;
 			}
@@ -58,7 +68,7 @@
 		}
 		&_pl {
 			margin-left: 20px;
-    background: #FBFBFB url(../img/top/calendar.svg) no-repeat right 17px center;
+    		background: #FBFBFB url(../img/top/calendar.svg) no-repeat right 17px center;
 		}
 	}
 

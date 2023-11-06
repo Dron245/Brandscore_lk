@@ -35,9 +35,18 @@
 			width: 50%;
 			top: 47%;
 			right: 0;
+			@media (max-width: em(1300)){
+				  width: 35%;
+			}
+			@media (max-width:$pc){
+				 width: 25%; 
+			}
 			transform: translateY(-50%);
+			@media (max-width:$tablet){
+				 width: 15%;
+			}
 			@media (max-width:$mobile){
-				 display: none;
+				 display: none; 
 			}
 		}
 	}

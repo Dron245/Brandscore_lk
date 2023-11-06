@@ -25,7 +25,7 @@ if (document.querySelector('.bottom-main__input')) {
 	flsModules.datepicker = picker1;
 }
 //  var datepicker = new Datepicker('#datepicker');
-if (document.querySelector('.resources__input')) {
+if (document.querySelector('.resources__input_b')) {
 	const picker2 = datepicker('[data-datepicker2]', {
 		customDays: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Нд"],
 		customMonths: ["Янв", "Фев", "Март", "Апр", "Май", "Июнь", "Июль", "Авг", "Сент", "Окт", "Нояб", "Дек"],

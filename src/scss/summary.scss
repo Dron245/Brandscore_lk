@@ -27,6 +27,9 @@
 			width: 80%;
 			top: 50%;
 			right: 0;
+			@media (max-width:$pc){
+				 width: 60%; 
+			}
 			transform: translateY(-50%);
 			@media (max-width:$mobile){
 				 width: 50%; 

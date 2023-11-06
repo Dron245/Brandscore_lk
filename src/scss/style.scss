@@ -79,12 +79,14 @@ body {
 	flex-direction: column;
 	overflow: hidden;
 	background: #fbfbfb;
+	
 	@supports (overflow: clip) {
 		overflow: clip;
 	}
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
+		
 	}
 	// Фикс для слайдеров
 	> * {

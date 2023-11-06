@@ -20,4 +20,9 @@ function documentActions(e) {
 		// document.querySelector('.main-bottom__sublist').classList.remove('exportmenu-open')
 		document.querySelector('.main-bottom__sublist') ? document.querySelector('.main-bottom__sublist').classList.remove('exportmenu-open') : null
 	}
+	if (!targetElement.closest('.icon-menu') && !targetElement.closest('.menu-wrapper')) { 
+		document.documentElement.classList.remove("menu-open");
+		document.documentElement.classList.remove("lock");
+		
+	}
 }
