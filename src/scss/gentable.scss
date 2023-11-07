@@ -46,15 +46,10 @@
 			margin-right: -10px;
 		}
 		table {
-			
 			background-color: #fff;
-			
 			display:block;
-		
-			
 			tr {
 			 text-align: left;
-			 
 			}
 			td {
 				img {
@@ -64,10 +59,7 @@
 			th {
 				border-bottom: 1px solid #D3D3D3;
 				text-align: center;
-				padding-left: 15px;
-				padding-right: 15px;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				padding: 10px 15px;
 				img {
 					vertical-align: middle;
 					margin-left: 5px;
@@ -76,33 +68,19 @@
 			th[colspan] {
 				text-align: left;
 			}
+			tr a {
+				max-width: 210px;
+			}
 			tr td:has(img, a) {
 				text-align: left;
 				position: relative;
-				
-				// display: flex;
-				// justify-content: space-between;
 			}
 			
-			tr a{
-				// height: 30px;
-				display: inline-block;
-				// color: #E00815;
-				// text-decoration: underline;
-				width: 70%;
-				// overflow: hidden;
-				text-overflow: ellipsis;
-				// white-space: nowrap;
-				word-wrap: break-word;
-			}
+			
 			tr a+img {
 				margin-left: 20px;
 				position: absolute;
 				right: 0px;
-				// display: inline-block;
-			// color: #E00815;
-			// text-decoration: underline;
-			// width: 90%;
 			}
 		}
 	}

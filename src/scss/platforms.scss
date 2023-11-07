@@ -61,7 +61,7 @@
 		&:not(:last-child) {
 			margin-bottom: 88px;
 		}
-		@media (max-width:em(1400)){
+		@media (max-width:em(1300)){
 			 flex-direction: column; 
 		}
 		@media (max-width:$tablet){
@@ -98,7 +98,7 @@
 		display: flex;
 		flex-direction: column;
 		// padding-right: 10px;
-		@media (max-width:em(1400)){
+		@media (max-width:em(1300)){
 			 margin-bottom: 50px; 
 		}
 		@media (max-width:$mobile){
@@ -125,7 +125,7 @@
 		
 		&.-ibg {
 			padding-bottom: 38%;
-			@media (max-width:em(1400)){
+			@media (max-width:em(1300)){
 				  padding-bottom: 17%; 
 			}
 		}
@@ -136,22 +136,17 @@
 			
 		}
 		table {
-			//  width: 631px;
-			// width: 100%;
+			
 			background-color: #fff;
 			display:block;
     		overflow-x: auto;
 			@media (max-width:em(530)){
 				margin-left: -10px;
 				margin-right: -10px;
-				display: inline-block; 
+				// display: inline-block; 
 				overflow-x: auto;
 			}
-			@media (max-width:$mobileSmall){
-				// margin-left: -10px;
-				// margin-right: -10px; 
-				//  display: inline-block; 
-			}
+			
 			@media (max-width: em(570)){
 				  display: block;
 			}
@@ -176,17 +171,7 @@
 		& tr:nth-child(1) th{
 			text-align: center;
 		}
-		// th[colspan] {text-align: center;}
-		tr a{
-			// height: 30px;
-			display: inline-block;
-			// color: #E00815;
-			// text-decoration: underline;
-			width: 90%;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
+		
 		td {
 			text-align: left;
 			padding-top: 20px;
@@ -199,17 +184,13 @@
 				padding-bottom: 10%;
 			}
 		}
-		td:has(img){
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-		// flex: 0 0 61.218569%; /* 633/1034 */
-		@media (min-width:em(1400)){
+		
+		@media (min-width:em(1300)){
 			 margin-left: 20px; 
 		}
-		@media (max-width:em(1400)){
-			 margin-right:auto; 
+		@media (max-width:em(1300)){
+			 margin-right:auto;
+			 margin-left: auto;
 		}
 		@media (max-width:em(530)){
 			 width: 100%;
@@ -225,7 +206,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
-		@media (max-width:em(1400)){
+		@media (max-width:em(1300)){
 			 width: 70%; 
 		}
 	}

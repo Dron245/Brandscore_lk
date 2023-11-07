@@ -1,7 +1,9 @@
 .content {
 
 	&__main {
-		
+		.menu-open & {
+			//  filter: blur(3px);
+		}
 	}
 }
 .main {
@@ -23,6 +25,14 @@
 
 	&__bottom {
 		display: flex;
+		align-items: center;
+		& .bottom-main__input_summary {
+			width: 120px;
+			background: #FBFBFB no-repeat;
+			@media (min-width:$mobile){
+				 display: none; 
+			}
+		}
 	}
 }
 .top {
@@ -247,11 +257,7 @@
 			} 
 		}
 		&_summary {
-			width: 120px;
-			background: #FBFBFB no-repeat right 17px center;
-			@media (min-width:$mobile){
-				 display: none; 
-			}
+			
 		}
 	}
 }

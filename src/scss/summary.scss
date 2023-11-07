@@ -6,7 +6,9 @@
 		box-shadow: 0px -20px 15px 7px #F3F6F8;
 		@include adaptiveValue("margin-top", 73, 42);
 		padding: 43px toRem(37);
-		
+		.menu-open & {
+			// filter: blur(3px);
+		}
 		@media (max-width:$mobile){
 			 padding: 43px toRem(10); 
 			 margin: 42px 0px;
@@ -50,16 +52,19 @@
 
 	&__raiting {
 		display: flex;
-		row-gap: 43px;
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: space-between;
 		@media (min-width:em(1920)){
 			  justify-content: center;
 		}
-		@media (max-width:$mobile){
-			//  flex-wrap: nowrap; 
+		@media (max-width:$pc){
+			row-gap: 43px;
 		}
+		@media (max-width:$tablet){
+			row-gap: 30px;
+		}
+		
 	}
 
 	&__left {
@@ -115,6 +120,10 @@
 		font-size: toRem(24);
 		line-height: math.div(32 , 24);
 		padding-left: 23px;
+		@media (max-width:$pc){
+			flex: 0 0 100%;
+			margin-left: 0;
+		}
 		&::before{
 			content:'';
 			position: absolute;
@@ -130,15 +139,15 @@
 	}
 
 	&__bottom {
-		margin-top: 28px;
-		flex: 0 0 60%;
+		// margin-top: 28px;
+		flex: 0 0 100%;
 		font-size: toRem(16);
 		font-weight: 500;
 		line-height: math.div(24 , 16);
 		max-width: toRem(553);
 		@media (max-width:$mobile){
-			flex: 0 0 100%;
-			margin-top: 0;
+			// flex: 0 0 100%;
+			// margin-top: 0;
 			font-size: toRem(18);
 			font-weight: 300;
 			line-height: math.div(28 , 18);

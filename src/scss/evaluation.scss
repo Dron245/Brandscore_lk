@@ -119,8 +119,12 @@
     	overflow-x: auto;
    //  white-space: nowrap;
 	}
-	tbody td {
-		// text-align: left;
+	td {
+		text-align: center;
+	}
+	tbody td  a{
+		// text-align: center;
+		max-width: 155px;
 	}
 	@media (max-width:$mobile){
 		  margin: 0 toRem(-10);
@@ -174,6 +178,9 @@ line-height: 24px; /* 133.333% */
 		a {
 			color: $mainRed;
 			text-decoration: underline;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 218px;
 		}
 		&:not(:last-child) {margin-bottom: toRem(20);}
 		&_border {
@@ -213,10 +220,12 @@ line-height: 24px; /* 133.333% */
 
 	&__number {
 		font-family: Inter;
-		font-size: 36px;
+		// font-size: 36px;
+		@include adaptiveValue("font-size", 36, 24,2);
+		white-space: nowrap;
 		font-weight: 700;
 		@media (max-width:$mobile){
-			 font-size: 24px; 
+			//  font-size: 24px; 
 		}
 	}
 
@@ -235,14 +244,28 @@ line-height: 24px; /* 133.333% */
 	}
 
 	&__specify {
-		font-size: 18px;
+		@include adaptiveValue("font-size", 18, 16,0,1400,768);
 		// font-style: normal;
 		font-weight: 700;
 		line-height: 24px; /* 133.333% */
 		& > *:not(:last-child) {
 			margin-right: 10px;
 		}
+		& > * {
+			// outline: 1px solid;
+		}
+		span:not(:last-child) {
+			@media (max-width: em(1300)){
+				 display: block;
+				 margin-bottom: 15px; 
+			}
+			@media (max-width:$pc){
+				 display: initial;
+				 margin-bottom: 0; 
+			}
+		}
 		input {
+			@include adaptiveValue("width", 186, 100,0,1400,998);
 			border: initial;
 			height: 20px;
 			border-radius: initial;

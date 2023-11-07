@@ -33,8 +33,13 @@ tr {
 }
 
 tr a {
+	display: inline-block;
+	max-width: 325px;
+	padding-right: 10px;
 	color: #E00815;
 	text-decoration: underline;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 td {
@@ -45,6 +50,20 @@ td {
 
 tr:last-child td {
 	padding-bottom: 30px;
+}
+
+tr td:has(img, a) {
+	text-align: left;
+	position: relative;
+}
+
+td:has(img) {
+	white-space: nowrap;
+}
+tr a+img {
+	margin-left: 20px;
+	position: absolute;
+	right: 0;
 }
 
 .circkle {

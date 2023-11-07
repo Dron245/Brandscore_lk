@@ -99,8 +99,8 @@
 		margin-top: 50px;
 		overflow-x: auto;
 		@media (max-width:$mobile){
-			margin-left: -10px;
-			margin-right: -10px;
+			margin-left: -20px;
+			margin-right: -20px;
 		}
 		table {
 			border-radius: 5px;
@@ -125,37 +125,12 @@
 				text-align: left;
 				position: relative;
 				
-				// display: flex;
-				// justify-content: space-between;
 			}
-			tr a{
-				// height: 30px;
-				display: inline-block;
-				// color: #E00815;
-				// text-decoration: underline;
-				width: 70%;
-				// overflow: hidden;
-				text-overflow: ellipsis;
-				// white-space: nowrap;
-				word-wrap: break-word;
-			}
+			
 			tr a+img {
 				margin-left: 20px;
 				position: absolute;
 				right: 0px;
-				// display: inline-block;
-			// color: #E00815;
-			// text-decoration: underline;
-			// width: 90%;
-			}
-			td img {
-				margin-right: 20px;
-				
-			}
-			td:has(img){
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
 			}
 		}
 	}
