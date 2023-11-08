@@ -6,6 +6,46 @@
 		box-shadow: 0px -20px 15px 7px #F3F6F8;
 		@include adaptiveValue("margin-top", 73, 42);
 		padding: 43px toRem(37);
+		&_star1 {
+			& .summary__img svg path:nth-child(1) {
+				fill:#FFEE51;
+			}
+			& .summary__img svg path:not(:nth-child(1)) {
+				fill: white;
+			}
+		}
+		&_star2 {
+			& .summary__img svg path:nth-child(1),
+			& .summary__img svg path:nth-child(2) {
+				fill:#FFEE51;
+			}
+			& .summary__img svg path:nth-child(3),
+			& .summary__img svg path:nth-child(4),
+			& .summary__img svg path:nth-child(5),{
+				fill: white;
+			}
+		}
+		&_star3 {
+
+		}
+		&_star4 {
+			& .summary__img svg path:nth-child(1),
+			& .summary__img svg path:nth-child(2),
+			& .summary__img svg path:nth-child(3),
+			& .summary__img svg path:nth-child(4){
+				fill:#FFEE51;
+			}
+			
+			& .summary__img svg path:nth-child(5)
+			 {
+				fill: white;
+			}
+		}
+		&_star5 {
+			& .summary__img svg path{
+				fill:#FFEE51;
+			}
+		}
 		.menu-open & {
 			// filter: blur(3px);
 		}
